@@ -1,0 +1,292 @@
+/* stylelint-disable */
+.charts {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  width: 99.8%;
+  height: inherit;
+
+  .charts--breadcrumb {
+    height: 52px;
+    max-height: 52px;
+    min-height: 52px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    .actions {
+      .ant-btn {
+        width: auto;
+        min-width: 100px;
+      }
+    }
+
+    .crumbs {
+      .crumbs-link {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .charts--container {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+
+    .charts--section {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 10px;
+
+      .charts--section__title {
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 600px;
+          text-transform: uppercase;
+        }
+
+        .maximize-btn {
+          cursor: pointer;
+          padding: 2px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: #eee;
+          }
+        }
+      }
+    }
+
+    .header {
+      min-height: 70px;
+      max-height: 70px;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+        .title--icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 5px;
+          background: #19bfff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            border: 3px solid #fff;
+            border-radius: 5px;
+            padding: 2px;
+          }
+        }
+
+        .title--text {
+          padding: 0 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            margin: 0;
+            text-align: left;
+            width: 100%;
+          }
+
+          .title--text__primary {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+          }
+
+          .title--text__secondary {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1565c0;
+          }
+        }
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: row;
+        border-left: 1px solid #ddd;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        min-width: 100px;
+
+        .btn {
+          cursor: pointer;
+          padding: 2px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: #eee;
+          }
+        }
+      }
+    }
+
+    .dashboard {
+      display: flex;
+      flex-direction: row;
+      background: #eee;
+
+      .dashboard--map {
+        background: #fff;
+        width: 350px;
+        max-width: 34%;
+        min-width: 34%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+        .map-container {
+          position: relative;
+          width: 100%;
+          height: calc(100% - 50px);
+          padding: 10px;
+          padding-bottom: 0;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+
+          .outer-container {
+            padding: 0;
+            flex: 1;
+            padding-bottom: 10px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+
+            .map-aside-container {
+              display: flex;
+              flex: 1;
+
+              .gis-map-container {
+                border-radius: 5px;
+
+                .left-pane {
+                  flex: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dashboard--charts {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .chart-container {
+          // min-height: 300px;
+          background: #fff;
+          border-radius: 5px;
+          width: 100%;
+          margin-bottom: 10px;
+
+          .chart {
+            // max-width: 1000px;
+            .echarts-for-react {
+              height: 400px !important;
+              margin-top: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .maximized-chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    .maximized-chart--dialog {
+      width: 80%;
+      height: 80%;
+      background: #fff;
+      border-radius: 5px;
+
+      .dialog--title {
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 600px;
+          text-transform: uppercase;
+        }
+
+        .close-btn {
+          cursor: pointer;
+          padding: 2px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: #eee;
+          }
+        }
+      }
+
+      .dialog--body {
+        height: calc(100% - 50px);
+
+        .echarts-for-react {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

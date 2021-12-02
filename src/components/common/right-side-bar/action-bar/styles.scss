@@ -1,0 +1,83 @@
+.action-bar-container {
+  padding: 0 20px;
+  min-width: 300px;
+  background: #fff;
+
+  header {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 0;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .close-icon {
+      cursor: pointer;
+
+      &:hover {
+        background: #ccc;
+        border-radius: 50%;
+      }
+    }
+
+    .icon-name-container {
+      display: flex;
+      align-items: center;
+
+      div {
+        .text-area {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .section-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      .section-wrapper--img {
+        display: flex;
+        justify-content: center;
+      }
+
+      .section--division {
+        font-size: 13px;
+        color: #020202;
+        line-height: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+
+        .rename-icon {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .rename-icon:hover {
+          background: #eee;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      .section--div {
+        color: rgb(102, 108, 115);
+        font-size: 12px;
+        cursor: pointer;
+        margin: 2px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,471 @@
+@import '~@target-energysolutions/app-shell/lib/styles.css';
+
+.target-app-shell-appshell-content {
+  overflow: hidden;
+  display: flex;
+}
+
+.target-app-shell--shell-side--left {
+  z-index: 111 !important;
+}
+
+.target-app-shell--left-side--btn-expand {
+  align-items: center;
+  color: #2f81fe !important;
+  display: inline-flex;
+  height: 17px;
+  justify-content: center;
+  position: absolute;
+  transition: transform 0.2s linear;
+  width: 17px;
+  will-change: transform;
+  z-index: 1;
+}
+
+.messenger-messenger-tab-container {
+  width: 100% !important;
+  height: calc(100% - 52px);
+}
+
+.target-app-shell-searchbar {
+  top: 60px;
+}
+
+.target-app-shell-notification-page-content {
+  .target-app-shell-notificationpage-container {
+    padding-top: 77px !important;
+  }
+}
+
+.sidebar-ws-container.expanded {
+  z-index: 10;
+  height: calc(100% - 53px);
+  max-height: calc(100% - 53px);
+  position: absolute;
+  top: 53px;
+}
+
+.target-app-shell--available-apps--list {
+  margin: 0 !important;
+}
+
+.target-app-shell-topbar {
+  .md-btn--icon {
+    color: #fff;
+  }
+
+  .md-icon {
+    color: #fff;
+  }
+
+  .md-text {
+    color: #fff;
+  }
+
+  .md-list-item {
+    .md-text {
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+
+  .target-app-shell-topbar-logowrapper {
+    .target-app-shell-topbar-title {
+      .gis-btn {
+        background: #fff;
+        font-size: 16px;
+        width: 60px;
+        min-width: 60px;
+        color: #1565c0;
+        padding: 0;
+        height: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.red {
+  .md-text--theme-primary {
+    color: #f44336;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #f44336;
+  }
+}
+
+.pink {
+  .md-text--theme-primary {
+    color: #e91e63;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #e91e63;
+  }
+}
+
+.purple {
+  .md-text--theme-primary {
+    color: #9c2760;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #9c2760;
+  }
+}
+
+.royal_blue {
+  .md-text--theme-primary {
+    color: #673ab7;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #673ab7;
+  }
+}
+
+.blue {
+  .md-text--theme-primary {
+    color: #3f51b5;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #3f51b5;
+  }
+}
+
+.light_blue {
+  .md-text--theme-primary {
+    color: #2196f3;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #2196f3;
+  }
+}
+
+.green_blue {
+  .md-text--theme-primary {
+    color: #00bcd4;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #00bcd4;
+  }
+}
+
+.sea_green {
+  .md-text--theme-primary {
+    color: #009688;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #009688;
+  }
+}
+
+.green {
+  .md-text--theme-primary {
+    color: #00a759;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #00a759;
+  }
+}
+
+.lime {
+  .md-text--theme-primary {
+    color: #8bc34a;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #8bc34a;
+  }
+}
+
+.yellow {
+  .md-text--theme-primary {
+    color: #ffc107;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #ffc107;
+  }
+}
+
+.orange {
+  .md-text--theme-primary {
+    color: #ff9800;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #ff9800;
+  }
+}
+
+.brown {
+  .md-text--theme-primary {
+    color: #795548;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #795548;
+  }
+}
+
+.grey {
+  .md-text--theme-primary {
+    color: #607d8b;
+  }
+
+  .md-background--primary,
+  .md-background--secondary {
+    background: #607d8b;
+  }
+}
+
+.brand_img {
+  background: rgb(21, 101, 192);
+  position: absolute;
+  top: 10px;
+  left: 31px;
+  z-index: 10;
+  cursor: pointer;
+
+  img {
+    height: 25px;
+  }
+}
+
+.pwrd_by_meera {
+  background: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding: 2px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.7;
+
+  img {
+    height: 10px;
+  }
+}
+
+.messenger-messageinput-container {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 !important;
+
+  .messenger-messageinput-content {
+    margin: 0 !important;
+  }
+}
+
+.messenger-messageinput-text-input .DraftEditor-root {
+  max-height: 90px !important;
+}
+
+.target-commonuimd-customize-textarea {
+  overflow-y: hidden;
+}
+
+.messenger-messageinput-text-input .public-DraftEditorPlaceholder-root,
+.messenger-messageinput-text-input .DraftEditor-editorContainer {
+  top: 0 !important;
+  z-index: 1;
+}
+
+.messenger-messageinput--btn-expand {
+  position: absolute !important;
+  left: 0;
+  width: 24px !important;
+  height: 24px !important;
+  display: inline-flex !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  will-change: transform;
+  z-index: 1;
+}
+
+.messenger-messageinput-btn {
+  font-weight: 700;
+  justify-content: center;
+  height: 26px !important;
+  width: 63px !important;
+  text-transform: capitalize;
+  color: #2f81fe !important;
+  border-radius: 26px;
+  background: transparent !important;
+}
+
+.messenger-messageinput-btn:hover {
+  background: #f4f6f8 !important;
+  cursor: pointer;
+}
+
+.messenger-base-dialog--btn-action {
+  border-radius: 8px;
+  background: #e3eeff !important;
+  color: #2f81fe !important;
+  height: 40px;
+  min-width: 143px;
+  font-weight: 700;
+}
+
+.messenger-base-dialog--btn-action.md-btn--flat {
+  background: #f4f6f8 !important;
+  color: #7583a0 !important;
+  font-weight: 700;
+}
+
+.messenger-base-dialog--btn-action.md-background--primary {
+  background: #e3eeff !important;
+  color: #2f81fe !important;
+}
+
+.messenger-uploadavatar-btn {
+  background: rgba(47, 129, 254, 0.12) !important;
+
+  svg {
+    path {
+      fill: #2f81fe !important;
+    }
+  }
+}
+
+// search memeber to join for group
+.messenger-group-user-selector-input.mdc-text-field {
+  width: 155px !important;
+}
+
+.messenger--group-members-panel--search-input--input {
+  border-color: #2f81fe !important;
+}
+
+.messenger-group-members-panel-list {
+  overflow: hidden;
+}
+
+.messenger-group-members-panel-btn-members-add {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  min-width: 30px;
+  text-transform: capitalize;
+  width: 30px;
+}
+
+.messenger-group-members-panel-btn-leave-group {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  height: 55px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.md-btn--text {
+  text-transform: capitalize;
+}
+
+.md-text--theme-secondary {
+  color: #ff2a26 !important;
+}
+
+.md-icon-separator {
+  align-items: center;
+  display: flex;
+  font-weight: inherit;
+  text-align: left;
+}
+
+.gis-fe-main {
+  background: #f8f8f6;
+
+  .messenger-messenger-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-height: 440px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .messenger-expandedmessenger-container--normal {
+    width: auto;
+    position: absolute;
+  }
+}
+
+.messenger-chat-panel-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 578px;
+}
+
+// Extra design of user profile during chat
+
+.messenger-profile-panel-avatar {
+  cursor: pointer;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.messenger-fullmessenger-right-close {
+  right: 3px;
+  position: absolute !important;
+}
+
+.messenger-profile-panel-header {
+  width: 100%;
+}
+
+.messenger-profile-panel-content {
+  padding: 25px 0 0;
+}
+
+.messenger-profile-panel--block-container {
+  width: 100% !important;
+}
+
+.target-app-shell--left-side--app-item-wrapper {
+  div {
+    div {
+      z-index: 5 !important;
+    }
+  }
+}

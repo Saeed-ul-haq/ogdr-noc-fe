@@ -1,0 +1,11 @@
+# Build front-end files
+FROM node:alpine
+ARG NPM_AUTH_TOKEN
+ARG BUILD_PROFILE
+WORKDIR /fecode
+COPY . /fecode
+RUN echo -e "@target-energysolutions:registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > .npmrc
+RUN yarn
+
+EXPOSE 8000
+CMD ["yarn", "start"]

@@ -1,0 +1,59 @@
+.form-layers {
+  background-color: white;
+  padding: 20px 0;
+  margin: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  height: calc(100vh - 200px);
+  justify-content: space-between;
+
+  .filters-form {
+    .dynamic-filters {
+      flex: 1;
+      margin-top: 15px;
+      padding: 0 10px;
+
+      .form-layers-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: rgba(0, 0, 0, 0.67);
+      }
+    }
+
+    .general-filters {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.27);
+      padding: 0 10px;
+
+      .form-layers-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: rgba(0, 0, 0, 0.67);
+      }
+    }
+  }
+
+  .filters-form .ant-form-item {
+    margin-bottom: 12px;
+
+    .ant-select-selector {
+      border-radius: 5px;
+    }
+  }
+
+  .form-layers-actions {
+    flex: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.27);
+  }
+
+  .actions-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "PRODUCT_APP_URL_PROFILE": false,
+    "PRODUCT_APP_URL_API": true,
+    "PRODUCT_APP_BRAND_LOGO": false,
+    "OAUTH_CALLBACK_HOST": false,
+    "PRODUCT_APP_URL_STUDIO": false,
+    "PRODUCT_APP_URL_LANG": false,
+    "DB_CONFIG_DEFAULT_TYPE": false,
+    "DB_CONFIG_DEFAULT_SERVER": false,
+    "DB_CONFIG_DEFAULT_PORT": false,
+    "DB_CONFIG_DEFAULT_DATABASE": false,
+    "DB_CONFIG_DEFAULT_USER": false,
+    "DB_CONFIG_DEFAULT_PASSWORD": false,
+    "ELASTIC_CONFIG_DEFAULT_SERVER": false,
+    "ELASTIC_CONFIG_DEFAULT_PORT": false,
+    "ELASTIC_CONFIG_DEFAULT_SCHEME": false,
+    "ELASTIC_CONFIG_DEFAULT_USER": false,
+    "ELASTIC_CONFIG_DEFAULT_PASSWORD": false,
+    "PRODUCT_APP_URL_LAND_INVESTMENT_DASHBOARD": false,
+    "PRODUCT_APP_URL_NURSERY_PERMIT_DASHBOARD": false,
+    "PRODUCT_APP_URL_FLUXBLE_MEETING": false,
+    "FLAG_TOGGLE_COVID_CHARTS": false
+  },
+  "extends": ["standard", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "varsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "ignore",
+        "asyncArrow": "ignore"
+      }
+    ],
+    "import/no-webpack-loader-syntax": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "16.5"
+    }
+  }
+}

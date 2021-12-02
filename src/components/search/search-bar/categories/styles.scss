@@ -1,0 +1,108 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 5px 0;
+
+  .category-list--primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    .avatar-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 74px;
+      min-height: 85px;
+      border-radius: 8px;
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+
+      .ant-avatar {
+        margin-bottom: 10px;
+
+        .ant-avatar-string {
+          text-transform: uppercase;
+        }
+      }
+
+      .avatar-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        width: 100%;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.54);
+      }
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+
+  .category-list--secondary {
+    padding: 16px 27px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5px;
+    border-top: 1px solid #eee;
+    width: 100%;
+    overflow: hidden;
+
+    .avatar-group--container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .avatar-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 8px;
+        max-width: 180px;
+
+        .ant-avatar {
+          margin-right: 10px;
+          min-width: 40px;
+          min-height: 40px;
+
+          .ant-avatar-string {
+            text-transform: uppercase;
+          }
+        }
+
+        .avatar-title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0;
+          text-transform: capitalize;
+          text-align: center;
+          font-size: 10px;
+          color: rgba(0, 0, 0, 0.54);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          flex: 1;
+        }
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+version: "2"
+volumes:
+    mssql: {}
+    mysql: {}
+services:
+    trove:
+        image: trove_frontend
+        container_name: trove
+        hostname: trove
+        ports:
+          - 80:80
+        depends_on:
+          - dev-trove-api
+    mssql:
+        image: microsoft/mssql-server-linux
+        container_name: mssql
+        hostname: mssql
+        ports: 
+          - 1433:1433
+        volumes:
+          - mssql:/var/opt/mssql
+        environment:
+          ACCEPT_EULA: Y
+          SA_PASSWORD: Tes9ting
+    configdb:
+        image: mysql:5.6
+        container_name: configdb
+        hostname: configdb
+        ports: 
+          - 3306:3306
+        volumes:
+          - mysql:/var/lib/mysql
+        environment:
+          MYSQL_ROOT_PASSWORD: admin
+        command: mysqld --lower-case-table-names=1
+    wellmanager:
+        image: meera/meera-app-wellmanager
+        container_name: wellmanager
+        hostname: wellmanager
+        ports:
+          - 8030:8080
+          - 50051
+        environment:
+          XSTREAMLINE_DATA_DIR: /var/lib/xstreamline
+        volumes:
+          - ${DOCKERDATA}/trove/xstreamline-app-nz-mdr:/var/lib/xstreamline
+    seismicmanager:
+        image: meera/meera-app-seismicmanager
+        container_name: seismicmanager
+        hostname: seismicmanager
+        ports:
+          - 8040:8080
+        environment:
+          DATA_DIR: /var/lib/xstreamline
+          XSTREAMLINE_TMP_DIR: /
+        volumes:
+          - ${DOCKERDATA}/trove/xstreamline-app-nz-mdr:/var/lib/xstreamline
+    catalogmanager:
+        image: meera/trove-service-ppdm-embedded
+        container_name: catalogmanager
+        hostname: catalogmanager
+        ports:
+          - 8050:8080
+        volumes:
+          - ${DOCKERDATA}/trove/config:/config
+        depends_on:
+          - mssql
+    studiomanager:
+        image: meera/trove-service-studio
+        container_name: studiomanager
+        hostname: studiomanager
+        ports:
+          - 8060:8080
+        volumes:
+          - ${DOCKERDATA}/trove/config:/config
+    dev-trove-api:
+        image: com.target/trove-api
+        container_name: dev-trove-api
+        hostname: dev-trove-api
+        environment:
+          PPDM_MANAGER: http://catalogmanager:8080
+          STUDIO_MANAGER: http://studiomanager:8080
+          WELL_MANAGER: http://wellmanager:8080/wellmanager/graphql
+          SEISMIC_MANAGER: http://seismicmanager:8080/seismicmanager/graphql
+          MSSQL_SERVER: jdbc:sqlserver://mssql:1433;DatabaseName=ppdm_nz
+          MSSQL_SERVER_USER_NAME: ppdmx
+          MSSQL_SERVER_PASSWORD: dataman
+          MYSQL_SERVER: jdbc:mysql://configdb:3306/trove?autoReconnect=true
+          MYSQL_SERVER_USER_NAME: xsuser
+          MYSQL_SERVER_PASSWORD: xsuser_password
+          DATA_DIR: /var/lib/xstreamline
+        ports:
+          - 8080:8080
+        volumes:
+          #- ${DOCKERDATA}/trove/trove-api-0.0.1-SNAPSHOT.jar:/app.jar
+          - ${DOCKERDATA}/trove/xstreamline-app-nz-mdr:/var/lib/xstreamline
+        depends_on:
+          - configdb
+          - wellmanager
+          - seismicmanager
+          - catalogmanager
+          - studiomanager
+          - json
+    json:
+        image: json:v2
+        container_name: json
+        hostname: json
+        ports:
+          - 8000:80
+        volumes:
+          - ${DOCKERDATA}/trove/json-files/:/usr/share/nginx/html
+          - ${DOCKERDATA}/trove/seismic-images/:/usr/share/nginx/html/trove-img/seismic/images

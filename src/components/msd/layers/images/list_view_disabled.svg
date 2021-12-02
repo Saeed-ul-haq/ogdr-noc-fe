@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>list_view_disabled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="list_view_disabled">
+            <circle id="Oval-Copy" fill="#F2F2F2" cx="12" cy="12" r="12"></circle>
+            <g id="Shape-3" transform="translate(6.000000, 7.000000)" fill="#5C5E5E" fill-rule="nonzero">
+                <path d="M7.10542736e-16,0 L2.625,0 L2.625,2.625 L7.10542736e-16,2.625 L7.10542736e-16,0 M3.9375,0.65625 L3.9375,1.96875 L11.8125,1.96875 L11.8125,0.65625 L3.9375,0.65625 M7.10542736e-16,3.9375 L2.625,3.9375 L2.625,6.5625 L7.10542736e-16,6.5625 L7.10542736e-16,3.9375 M3.9375,4.59375 L3.9375,5.90625 L11.8125,5.90625 L11.8125,4.59375 L3.9375,4.59375 M7.10542736e-16,7.875 L2.625,7.875 L2.625,10.5 L7.10542736e-16,10.5 L7.10542736e-16,7.875 M3.9375,8.53125 L3.9375,9.84375 L11.8125,9.84375 L11.8125,8.53125 L3.9375,8.53125" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

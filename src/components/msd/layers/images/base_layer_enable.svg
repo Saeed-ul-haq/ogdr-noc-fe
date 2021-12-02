@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>base_layer_enable</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="base_layer_enable" transform="translate(0.000000, 0.500000)">
+            <circle id="Oval" fill="#E3ECFA" cx="12" cy="12" r="12"></circle>
+            <g id="Shape-2" transform="translate(7.000000, 5.000000)" fill="#1979FF" fill-rule="nonzero">
+                <path d="M5.13333333,9.64833333 L9.33696296,6.3 L10.2666667,7.04083333 L5.13333333,11.1241667 L0,7.04083333 L0.924,6.30583333 L5.13333333,9.64833333 M5.13333333,8.16666667 L0,4.08333333 L5.13333333,0 L10.2666667,4.08333333 L5.13333333,8.16666667 M5.13333333,1.47583333 L1.85940741,4.08333333 L5.13333333,6.69083333 L8.40725926,4.08333333 L5.13333333,1.47583333 M5.13333333,12.5241667 L9.33696296,9.17583333 L10.2666667,9.91666667 L5.13333333,14 L0,9.91666667 L0.924,9.18166667 L5.13333333,12.5241667" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

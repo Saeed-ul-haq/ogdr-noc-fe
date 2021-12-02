@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>post_offices</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="post_offices">
+            <circle id="Oval" fill="#607D8B" cx="15" cy="15" r="15"></circle>
+            <path d="M18.4981333,11.8994399 L15.6981333,11.8994399 L15.6981333,9.80074687 L19.1962667,9.80074687 L19.1962667,7 L14.2981333,7 L14.2981333,11.8994399 L11.4981333,11.8994399 C9.56426667,11.8994399 8,13.4678581 8,15.3985063 L8,21 L22,21 L22,15.3985063 C21.9962667,13.4641238 20.4282667,11.8994399 18.4981333,11.8994399 Z M9.39626667,19.5996266 L9.39626667,15.3985063 C9.39626667,14.2408642 10.3370667,13.2998133 11.4944,13.2998133 C12.6517333,13.2998133 13.5925333,14.2408642 13.5925333,15.3985063 L13.5925333,19.5996266 L9.39626667,19.5996266 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,361 @@
+.charts-container1 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  .headings {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .labels-section {
+      display: flex;
+
+      .dashboard {
+        margin: 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.47);
+      }
+
+      .seperator {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.47);
+        font-weight: 600;
+      }
+
+      .new-dashboard {
+        margin: 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.57);
+      }
+    }
+
+    .go-back-button .go-back-button {
+      min-width: 80px;
+    }
+  }
+
+  .body-container {
+    padding: 10px 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    max-height: 89vh;
+    overflow: auto;
+
+    .aws-section {
+      background-color: white;
+      padding: 0 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 60px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+          color: rgba(0, 0, 0, 0.87);
+          margin-left: 10px;
+          font-weight: 600;
+        }
+
+        .aws-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 40px;
+          min-height: 40px;
+          background: teal;
+          border-radius: 3px;
+        }
+      }
+
+      .icons {
+        min-width: 120px;
+        display: flex;
+        justify-content: space-around;
+        border-left: 1px solid #ddd;
+        min-height: 60px;
+        align-items: center;
+      }
+    }
+  }
+
+  .map-and-population {
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+    border: 1px solid black;
+    flex-wrap: wrap;
+
+    .echart-container {
+      background-color: white;
+      padding: 20px 0;
+      margin: 0;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+
+      .md-cell {
+        margin: 0;
+      }
+
+      .chart-title {
+        padding: 0 20px;
+        font-size: 18px;
+        font-weight: 400;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+
+    .map {
+      position: relative;
+    }
+  }
+}
+
+// .charts-container {
+//   width: 100%;
+//   height: 100%;
+//   position: relative;
+//   padding: 0 8px;
+
+//   .heading {
+//     display: none;
+//     font-size: 16px;
+//     font-weight: 500;
+//     color: #777;
+//     margin: 10px 0 10px 15px;
+//   }
+
+//   main {
+//     display: flex;
+//     height: calc(100vh - 115px);
+
+//     .outer-container {
+//       padding: 0;
+
+//       .gis-map-container {
+//         height: calc(100vh - 115px);
+
+//         .target-map-toc .ant-tree {
+//           max-height: 200px;
+//         }
+//       }
+//     }
+
+//     .map-section {
+//       flex: 4;
+//     }
+
+//     .drawer-switcher {
+//       height: 40px;
+//       z-index: 1001;
+//       position: absolute;
+//       top: 15px;
+//       cursor: pointer;
+
+//       .hide-drawer-btn {
+//         left: 273px;
+//       }
+
+//       i {
+//         width: 30px;
+//         height: 35px;
+//         position: absolute;
+//         color: #bbb;
+//         font-size: 19px;
+//         top: 16px;
+//         z-index: 1001;
+//         left: -5px;
+//       }
+//     }
+
+//     .charts-list {
+//       display: flex;
+//       height: 100%;
+//       overflow: auto;
+//       flex: 6;
+//       flex-wrap: wrap;
+//       padding-left: 7px;
+//       border-left: 1px solid #ddd;
+
+//       .echarts-for-react {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         min-height: 260px;
+//       }
+
+//       .echart-container {
+//         &.full-width {
+//           width: calc(100% - 10px);
+//         }
+
+//         .echarts-for-react {
+//           height: 100% !important;
+//           width: 100% !important;
+//           padding: 5px 0;
+//         }
+
+//         width: calc(50% - 20px);
+//         // height: 300px;
+//         min-width: 150px;
+//         box-shadow: inset 0 0 4px #dfdddd;
+//         border-radius: 5px;
+//         margin-bottom: 13px;
+//         background: #fff;
+//         position: relative;
+//         cursor: pointer;
+
+//         canvas {
+//           cursor: pointer;
+//         }
+
+//         .chart-title {
+//           padding: 20px 20px 0 20px;
+//           color: #3cb2ef;
+//           font-weight: 500;
+//           font-size: 15px;
+//           position: absolute;
+//         }
+//       }
+
+//       .echart-container:nth-child(odd) {
+//         margin-right: 13px;
+//       }
+//     }
+
+//     .new-chart-container {
+//       &.open {
+//         flex: 3;
+//         max-width: 313px;
+//       }
+
+//       flex: 0;
+//       display: flex;
+//       flex-direction: column;
+//       padding: 0 10px;
+//       border-left: 1px solid #ddd;
+//       height: 100%;
+//       justify-content: space-between;
+//       position: relative;
+//       transition: flex 0.3s;
+
+//       .ant-drawer-content-wrapper {
+//         width: 313px !important;
+
+//         .ant-drawer-content {
+//           background-color: inherit;
+//         }
+
+//         .ant-drawer-title {
+//           color: #3cb2ef;
+//           margin-left: 15px;
+//         }
+//       }
+
+//       .ant-drawer-body {
+//         padding: 0 8px !important;
+//         height: calc(100% - 55px);
+//         justify-content: space-between;
+//         display: flex;
+//         flex-direction: column;
+//       }
+
+//       form {
+//         padding-left: 7px;
+//         margin-left: 7px;
+
+//         button {
+//           border: 1px solid #d9d9d9;
+//           width: 100%;
+//           border-radius: 4px;
+//           color: #3cb2ef;
+//         }
+//       }
+
+//       .creator-div {
+//         flex: 7;
+//         background: #fff;
+//         box-shadow: inset 0 0 5px #dfdddd;
+//         border-radius: 5px;
+//         max-height: 70%;
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         .echarts-for-react {
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .chart-creator-form {
+//   .ant-form-item {
+//     margin-bottom: 0;
+
+//     .ant-form-item-label {
+//       text-align: left;
+//     }
+//   }
+
+//   .btn-container {
+//     display: flex;
+//     justify-content: space-evenly;
+
+//     .ant-col-24 {
+//       margin: 5px 0;
+
+//       .ant-form-item-control-input-content {
+//         justify-content: space-evenly;
+//         width: 100%;
+//         display: flex;
+//       }
+//     }
+//   }
+// }
+
+// .charts-modal {
+//   .ant-modal-content {
+//     .ant-modal-body {
+//       display: flex;
+//       flex-direction: column;
+
+//       .charts-carousel {
+//         .chart-carousel-container {
+//           .chart-title {
+//             height: 40px;
+//             color: #3cb2ef;
+//             font-weight: 500;
+//             font-size: 15px;
+//           }
+
+//           .echarts-for-react {
+//             height: 420px !important;
+//             align-items: center;
+//             display: flex;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

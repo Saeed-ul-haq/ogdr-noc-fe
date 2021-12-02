@@ -1,0 +1,144 @@
+@import '~reset-css/reset';
+@import '~styles/globals';
+@import '~antd/dist/antd.css';
+$md-primary-color: #1979ff;
+
+@include react-md-everything;
+
+.md-title--dialog {
+  background-color: #1565c0 !important;
+  text-align: left !important;
+  padding: 10px !important;
+  color: whitesmoke !important;
+}
+
+.CadreAppShellWrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  background: #f5f5f5;
+  height: 100%;
+
+  .topBarContainer {
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+
+    & + .CadreInnerWrapper {
+      margin-top: 105px;
+      height: calc(100vh - 180px);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.input-container {
+  border: 1px solid #4b97e3;
+  height: 35px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  input {
+    margin: 0;
+  }
+
+  .md-text-field-icon-container {
+    display: flex;
+    align-items: center;
+
+    .md-icon {
+      margin: 0;
+    }
+
+    .md-icon:hover {
+      background: #eee;
+      border-radius: 50%;
+    }
+
+    .md-text-field {
+      margin: 0;
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .md-divider {
+    display: none;
+  }
+}
+
+.server-table-container {
+  .target-react-table-wrapper-container {
+    width: 100%;
+  }
+}
+
+.target-react-table-wrapper-tool-bar-container {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Generic classes related to display flex, will end with -g */
+
+.flex-center-center-g {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-between-g {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col-center-center-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col-center-between-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.target-app-shell-appshell-content-right {
+  overflow: hidden !important;
+}

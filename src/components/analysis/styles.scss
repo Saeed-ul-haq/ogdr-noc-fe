@@ -1,0 +1,105 @@
+.analysis-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 8px;
+  background-color: white;
+
+  .filter-select-container {
+    display: flex;
+
+    .select-cnt {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .ant-tabs-tab {
+    text-align: left !important;
+    margin-bottom: 4px !important;
+  }
+
+  .ant-table-scroll table {
+    min-height: 425px;
+  }
+
+  .ant-table-column-title {
+    color: #3cb2ef;
+  }
+
+  .creator-div {
+    flex: 7;
+    background: #fff;
+    box-shadow: inset 0 0 1px #ccc;
+    border-radius: 5px;
+    height: 96%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .echarts-for-react {
+      height: 100% !important;
+      width: 100% !important;
+      padding: 5px 0;
+    }
+
+    .chart-title {
+      padding: 20px;
+      color: #3cb2ef;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+
+  .chart-heading {
+    padding: 28px;
+    background: linear-gradient(to right, #a0156f 0%, #fff0f6 100%);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+
+  .outer-container {
+    background: #fff;
+    box-shadow: inset 0 0 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+
+    .gis-map-container {
+      height: calc(50vh - 100px);
+      width: 100%;
+
+      .target-map-toc .ant-tree {
+        max-height: 100px;
+      }
+    }
+  }
+
+  .ant-tabs-vertical.ant-tabs-card.ant-tabs-left .ant-tabs-card-bar.ant-tabs-left-bar .ant-tabs-tab {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+  }
+
+  .ant-tabs-vertical.ant-tabs-card.ant-tabs-left .ant-tabs-card-bar.ant-tabs-left-bar .ant-tabs-tab-active {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    background: #e6f7ff;
+  }
+
+  .ant-tabs .ant-tabs-left-content {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,39 @@
+.login-splash {
+  width: calc(100vw);
+  height: calc(94vh);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .error-message {
+    color: rgba(0, 0, 0, 0.3);
+    width: 1000px;
+    text-align: center;
+  }
+
+  svg {
+    circle {
+      stroke-width: 1;
+      stroke: #1565c0;
+    }
+  }
+
+  .see-detail-link {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

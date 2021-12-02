@@ -1,0 +1,28 @@
+.map-foundation-container {
+  height: calc(100vh - 50px);
+
+  .ant-tabs {
+    height: 100%;
+
+    .ant-tabs-tab {
+      font-weight: 700;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab {
+      height: auto;
+    }
+
+    .ant-tabs-left-content {
+      height: calc(100% - 60px);
+      padding: 0;
+
+      .ant-tabs-tabpane.ant-tabs-tabpane-active {
+        height: 100%;
+      }
+    }
+  }
+
+  .ant-tabs-content {
+    height: calc(100% - 70px);
+  }
+}

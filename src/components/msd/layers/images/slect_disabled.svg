@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>slect_disabled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slect_disabled" transform="translate(0.000000, 0.500000)" fill="#5C5E5E">
+            <path d="M17,1 L17,9 L15,9 L15,3 L3,3 L3,15 L9,15 L9,17 L1,17 L1,1 L17,1 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            <rect id="Rectangle" x="0" y="0" width="4" height="4"></rect>
+            <rect id="Rectangle-Copy-2" x="0" y="14" width="4" height="4"></rect>
+            <rect id="Rectangle-Copy" x="14" y="0" width="4" height="4"></rect>
+            <polyline id="Path" fill-rule="nonzero" transform="translate(11.270000, 11.270000) rotate(-180.000000) translate(-11.270000, -11.270000) " points="8.42 7 7 8.42 12.14 13.54 9.54 13.54 9.54 15.54 15.54 15.54 15.54 9.54 13.54 9.54 13.54 12.13"></polyline>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,200 @@
+.ant-dropdown-menu-item {
+  .relation-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.search-box {
+  // position: absolute;
+  // top: 65px;
+  // left: 22px;
+  border-radius: 5px;
+  transition: top 0.2s ease;
+
+  .hidden {
+    display: none !important;
+  }
+
+  .search--input-grp {
+    // width: 392px;
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    transition-property: background, box-shadow;
+    transition-duration: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.02);
+
+    .input-grp {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      height: 48px;
+      padding: 0 10px;
+
+      .search-bar {
+        border-radius: 0;
+        box-sizing: border-box;
+        border-bottom: 0;
+        box-shadow: none;
+        border: 0;
+      }
+
+      svg {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .divider {
+        height: 70%;
+        width: 1px;
+        background: #ddd;
+        margin: 0 5px;
+      }
+
+      .ant-spin-spinning {
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .category-section {
+    margin-top: 10px;
+    background: #fff;
+    padding: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.02);
+
+    .spin-loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      p {
+        margin: 0;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.57);
+      }
+    }
+  }
+
+  .ant-input {
+    &:focus {
+      border-color: #fff;
+      border-right-width: 0 !important;
+    }
+  }
+
+  .section-layout-inset-shadow {
+    box-shadow: inset 0 14px 10px -10px rgba(60, 64, 67, 0.28);
+  }
+
+  .search-container {
+    height: calc(100% - 20px);
+    padding-top: 40px;
+    background: rgb(245, 245, 245);
+
+    .category-section {
+      border-radius: 0;
+      padding: 0;
+      margin-top: 20px;
+      overflow: auto;
+      overflow-x: hidden;
+      height: 100%;
+      background: inherit;
+
+      .categories {
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.expanded {
+  // position: absolute;
+  // top: 53px;
+  // left: 0;
+  // background: rgb(245, 245, 245);
+  // height: calc(100% - 53px);
+  // max-height: calc(100% - 53px);
+  // height: 100%;
+  transform: translateX(0);
+  transition: top 0.2s ease-in-out, width 0.2s ease;
+  transition-property: -webkit-transform, transform, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: top 0.2s ease-in-out, width 0.1s ease;
+  -moz-transition: top 0.2s ease-in-out, width 0.1s ease;
+  -ms-transition: top 0.2s ease-in-out, width 0.1s ease;
+  -o-transition: top 0.2s ease-in-out, width 0.1s ease;
+  animation: expandFromLeft 0.2s 1;
+  border-radius: 0;
+
+  .search--input-grp {
+    border-radius: 0;
+    width: 408px;
+  }
+
+  .expand-collapse-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 20px;
+    min-width: 20px;
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    top: 10px;
+    right: -21px;
+    transition: top 1s ease-in-out;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -ms-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+  }
+}
+
+@keyframes expandFromLeft {
+  0% {
+    width: 0;
+  }
+
+  25% {
+    width: 100px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  75% {
+    width: 300px;
+  }
+
+  100% {
+    width: 408px;
+  }
+}

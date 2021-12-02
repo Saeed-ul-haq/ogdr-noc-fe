@@ -1,0 +1,11 @@
+.gis-fe-table-wrapper {
+  width: 100%;
+
+  .ant-table-wrapper {
+    .ant-table-tbody {
+      td {
+        border-bottom: 5px solid #f8f8f8;
+      }
+    }
+  }
+}

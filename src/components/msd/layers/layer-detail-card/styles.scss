@@ -1,0 +1,28 @@
+.list-card-main {
+  border-radius: 7px;
+
+  .ant-card-body {
+    padding: 0;
+
+    .card-header {
+      padding: 7px;
+
+      .py-2 {
+        font-weight: bold;
+      }
+    }
+
+    .pb-0 {
+      padding-left: 7px;
+      padding-bottom: 7px;
+
+      .item-value {
+        margin-left: 10%;
+        opacity: 0.7;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

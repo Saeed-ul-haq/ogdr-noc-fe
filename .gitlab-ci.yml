@@ -1,0 +1,24 @@
+variables:
+  DOCKER_DRIVER: overlay2
+stages:
+  - build
+  # - b
+
+include:
+  - remote: https://target-digital-transformation.gitlab.io/pipeline/Build.gitlab-ci.yml
+
+build_single_image:
+  extends: .build_single_image
+  script:
+    - docker build -t "${IMAGE_REPOSITORY}:${IMAGE_TAG}" --build-arg NPM_AUTH_TOKEN=${NPM_AUTH_TOKEN} --build-arg GIT_COMMIT_HASH=${CI_COMMIT_SHA:0:8} .
+    - docker tag "${IMAGE_REPOSITORY}:${IMAGE_TAG}"  "${IMAGE_REPOSITORY}:latest"
+    - docker push "${IMAGE_REPOSITORY}"
+  only:
+    - master
+    - feature/configs
+    - feature/mosd
+    - tags
+  tags:
+    - woking-physical
+
+

@@ -1,0 +1,45 @@
+@import '~react-md/src/scss/react-md';
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~styles/media-queries';
+
+$ams-primary-color: #1565c0;
+$ams-primary-color-dark: #1356a3;
+$ams-disable: #a5a5a5;
+$ams-primary-color-light: rgba(21, 101, 192, 0.38);
+$ams-accent-color: #ffa726;
+$trove-white-color: #fff;
+$trove-grey-color: #757575;
+$trove-medium-grey-color: #a5a5a5;
+$trove-light-grey-color: #e0e0e0;
+$trove-x-light-grey-color: #fafafa;
+$trove-light-border-color: #d5d5d5;
+
+$md-primary-color: $ams-primary-color;
+$md-secondary-color: $ams-primary-color;
+$md-avatar-size: 30px;
+
+$tablet: '(min-width: 768px) and (max-width: 1023px)';
+$desktop: '(min-width: 1024px)';
+$desktop-mdpi: '(min-width: 1279px)';
+$laptop-1532w: '(min-width: 1532px)';
+$laptop-1535w: '(min-width: 1535px)';
+$laptop-1536w: '(min-width: 1536px)';
+$laptop-1474w-768h: '(min-width: 1474px) and (min-height: 768px)';
+$laptop-1536w-728h: '(min-width: 1536px) and (min-height: 728px)';
+$laptop-1536w-729h: '(min-width: 1536px) and (min-height: 729px)';
+$desktop-1918w: 'only screen and (min-width: 1918px)';
+$desktop-1920w: '(min-width: 1920px)';
+
+$media-smart-phone: 'only screen and (min-device-width : 320px) and (max-device-width : 480px)';
+$media-smart-phone-landscape: 'only screen and (min-width : 321px)';
+$media-smart-phone-portrait: 'only screen and (max-width : 320px)';
+$media-iphone-4-landscape: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2)';
+$media-iphone-4-portrait: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)';
+$media-ipad: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px)';
+$media-ipad-landscape: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
+$media-ipad-portrait: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';
+$media-ipad-3-landscape: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2)';
+$media-ipad-3-portrait: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)';
+$media-desktop: 'only screen and (min-width : 1224px)';
+$media-desktop-large: 'only screen and (min-width : 1824px)';
+$media-desktop-1918w: 'only screen and (min-width : 1918px)';

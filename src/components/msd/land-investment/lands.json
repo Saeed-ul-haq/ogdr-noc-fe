@@ -1,0 +1,3566 @@
+{
+  "type": "FeatureCollection",
+  "name": "kookri",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-07-007-01-651",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Bidiyah",
+        "city": "Al Mintirib",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.816188453000052, 22.417958425000052],
+              [58.815910530000053, 22.417269136000073],
+              [58.815386778000061, 22.417470542000046],
+              [58.815361247000055, 22.417524023000055],
+              [58.815614769000035, 22.418152085000031],
+              [58.816188453000052, 22.417958425000052]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-10-002-01-125",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Wusta",
+        "wilayat": "Hayma",
+        "city": "Haima",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.281602674000055, 19.959494335000045],
+              [56.281637744000079, 19.959494929000073],
+              [56.281639099000074, 19.959448940000073],
+              [56.281638057000066, 19.959447038000064],
+              [56.281634697000072, 19.959386934000065],
+              [56.281314798000039, 19.959373711000069],
+              [56.281304189000082, 19.959648278000031],
+              [56.281597355000031, 19.959655971000075],
+              [56.281602674000055, 19.959494335000045]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8-56-028-01-008",
+        "landUse": "GOVERNMENT",
+        "governorat": "Musandam",
+        "wilayat": "Madha",
+        "city": "Amshehtan",
+        "plot_no": "8",
+        "block_no": "1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.349237333000076, 25.29918714300004],
+              [56.349178775000041, 25.298935841000059],
+              [56.348727225000061, 25.299022797000077],
+              [56.348786073000042, 25.299275455000043],
+              [56.349237333000076, 25.29918714300004]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-61-013-05-475",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Western Nejd",
+        "city": "Al Maziona",
+        "plot_no": "1533",
+        "block_no": "A",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [52.656420978000028, 17.840177293000067],
+              [52.656532397000035, 17.839646584000036],
+              [52.65542169500003, 17.839434450000056],
+              [52.655298581000068, 17.840027153000051],
+              [52.656344545000081, 17.840226824000069],
+              [52.656420978000028, 17.840177293000067]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-61-013-05-076",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Western Nejd",
+        "city": "Al Maziona",
+        "plot_no": "1529",
+        "block_no": "A",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [52.656781432000059, 17.838449680000053],
+              [52.655671022000035, 17.838237726000045],
+              [52.655578792000028, 17.838680805000024],
+              [52.656689490000076, 17.838892939000061],
+              [52.656781432000059, 17.838449680000053]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-61-013-05-491",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Western Nejd",
+        "city": "Al Maziona",
+        "plot_no": "1556",
+        "block_no": "A",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [52.653257312000051, 17.837776937000058],
+              [52.652217979000056, 17.837578456000074],
+              [52.652053739000053, 17.838367309000034],
+              [52.653093170000034, 17.838565700000061],
+              [52.653257312000051, 17.837776937000058]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-62-001-03-577",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Central Nejd",
+        "city": "Thumrait",
+        "plot_no": "525",
+        "block_no": "A",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.042958880000072, 17.623629725000058],
+              [54.042478301000074, 17.623420807000059],
+              [54.042342155000028, 17.623708780000072],
+              [54.042822734000026, 17.623917698000071],
+              [54.042958880000072, 17.623629725000058]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-63-001-02-443",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Eastern Nejd",
+        "city": "Shaleem",
+        "plot_no": "465",
+        "block_no": "B",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.647977746000038, 18.100928693000071],
+              [55.647621799000035, 18.100532567000073],
+              [55.647554123000077, 18.100522694000063],
+              [55.647300861000076, 18.100734269000043],
+              [55.64769367100007, 18.101165987000059],
+              [55.647977746000038, 18.100928693000071]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-018-11-683",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "New Salalah",
+        "plot_no": "4",
+        "block_no": "J",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.085297666000031, 17.021944749000056],
+              [54.084684923000054, 17.021875191000049],
+              [54.084528503000058, 17.021993856000051],
+              [54.084456862000081, 17.022577144000024],
+              [54.084580297000059, 17.022727635000024],
+              [54.085193041000082, 17.022797284000035],
+              [54.085297666000031, 17.021944749000056]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-018-11-690",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "New Salalah",
+        "plot_no": "11",
+        "block_no": "J",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.092032102000076, 17.018225567000059],
+              [54.090902939000046, 17.017988452000054],
+              [54.090722302000074, 17.018769385000041],
+              [54.091851570000074, 17.01900605000003],
+              [54.092032102000076, 17.018225567000059]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-034-03-458",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "Wad Al Saadah S.",
+        "plot_no": "102",
+        "block_no": "B",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.147500842000056, 17.060362401000077],
+              [54.147425075000058, 17.058009159000051],
+              [54.146016447000079, 17.058051025000054],
+              [54.146092404000058, 17.060402913000075],
+              [54.147500842000056, 17.060362401000077]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-034-02-810",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "Mad. Al Saadah S.",
+        "plot_no": "298",
+        "block_no": "B",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.148965539000073, 17.060678819000032],
+              [54.149147491000065, 17.060492556000042],
+              [54.149133641000049, 17.060063157000059],
+              [54.148429411000052, 17.060084142000051],
+              [54.148449152000069, 17.060694227000056],
+              [54.148965539000073, 17.060678819000032]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-034-02-810-2",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "Mad. Al Saadah S.",
+        "plot_no": "298",
+        "block_no": "B",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.149133641000049, 17.060063157000059],
+              [54.149109865000071, 17.059323071000051],
+              [54.148536847000059, 17.059340122000037],
+              [54.148560715000031, 17.060080209000034],
+              [54.149133641000049, 17.060063157000059]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-59-054-01-525",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Dalkut",
+        "city": null,
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [53.254927480000049, 16.707799184000066],
+              [53.254506715000048, 16.707722920000037],
+              [53.254403467000031, 16.708230488000027],
+              [53.255091026000059, 16.708354973000041],
+              [53.254927480000049, 16.707799184000066]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-46-001-01-902",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Taqah",
+        "city": "West Taqah",
+        "plot_no": "530",
+        "block_no": "C",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.390884256000049, 17.045466668000074],
+              [54.390828722000037, 17.045395597000038],
+              [54.390339653000069, 17.045456869000077],
+              [54.390241776000039, 17.045527684000035],
+              [54.390027239000062, 17.04600098700007],
+              [54.390543902000047, 17.046217705000061],
+              [54.390884256000049, 17.045466668000074]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-44-006-10-011",
+        "landUse": "COMMERCIAL",
+        "governorat": "Dhofar",
+        "wilayat": "Salalah",
+        "city": "North Awqad",
+        "plot_no": "11",
+        "block_no": "L",
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [54.029310342000031, 17.029283219000035],
+              [54.029081861000066, 17.029125024000052],
+              [54.028966710000077, 17.029278826000052],
+              [54.029195283000035, 17.029437113000029],
+              [54.029310342000031, 17.029283219000035]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-33-155-01-405",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Ar Rustaq",
+        "city": "Al Iraqi",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.420900631000052, 23.430353205000074],
+              [57.421105126000043, 23.430290869000032],
+              [57.420910500000048, 23.429758537000055],
+              [57.421363986000074, 23.429620286000045],
+              [57.421244307000052, 23.429292983000039],
+              [57.420591113000057, 23.429489942000032],
+              [57.420032782000078, 23.429658280000069],
+              [57.42034288900004, 23.43052325900004],
+              [57.420900631000052, 23.430353205000074]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-1-40040- -172L",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Al Batinah North",
+        "wilayat": "Sohar",
+        "city": null,
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.711343789000068, 24.359718780000037],
+              [56.711090630000058, 24.359576408000066],
+              [56.710917060000043, 24.359900770000024],
+              [56.711170220000042, 24.360043142000052],
+              [56.711343789000068, 24.359718780000037]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-1-30600-M-287-2011",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "Sohar",
+        "city": null,
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.638034570000059, 24.301933894000058],
+              [56.636357430000032, 24.300985071000071],
+              [56.635322039000073, 24.302522061000047],
+              [56.636999191000029, 24.303470986000036],
+              [56.638034570000059, 24.301933894000058]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-33-155-01-215",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Ar Rustaq",
+        "city": "Iraqi",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.424373438000032, 23.424447458000031],
+              [57.424614372000065, 23.424058205000051],
+              [57.424566595000044, 23.423963489000073],
+              [57.423838217000082, 23.423840265000024],
+              [57.423260567000057, 23.423742465000032],
+              [57.423140646000036, 23.424325507000049],
+              [57.42371829700005, 23.42442330800003],
+              [57.424228664000054, 23.424509636000039],
+              [57.424373438000032, 23.424447458000031]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-40-109-01-171",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "As Suwayq",
+        "city": "Batha Hilal",
+        "plot_no": "171",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.420035477000056, 23.824760139000034],
+              [57.420317014000034, 23.824680429000068],
+              [57.42001983800003, 23.823864877000062],
+              [57.41970105200005, 23.823963114000037],
+              [57.41890879500005, 23.824207154000078],
+              [57.418757590000041, 23.824207384000033],
+              [57.419059514000082, 23.825036564000072],
+              [57.420035477000056, 23.824760139000034]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-40-137-01-002",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "As Suwayq",
+        "city": "Batha (P.A)",
+        "plot_no": "2",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.437479190000033, 23.819088014000044],
+              [57.437251122000077, 23.818443918000071],
+              [57.436317572000064, 23.818723764000026],
+              [57.436545734000049, 23.819367951000061],
+              [57.437479190000033, 23.819088014000044]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-40-137-01-003",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "As Suwayq",
+        "city": "Batha (P.A)",
+        "plot_no": "3",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.437454031000073, 23.818288075000055],
+              [57.437225867000052, 23.817643979000025],
+              [57.436292421000076, 23.817923824000047],
+              [57.436520581000082, 23.818567921000067],
+              [57.437454031000073, 23.818288075000055]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-02-041-01-032",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Al Musanaah",
+        "city": "Alsad",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.514319281000041, 23.314351456000054],
+              [57.513930526000081, 23.313924202000067],
+              [57.513481271000046, 23.314272810000034],
+              [57.513870027000053, 23.314700066000057],
+              [57.514319281000041, 23.314351456000054]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-23-233-01-299",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Al Musanaah",
+        "city": "Wudam Sahil",
+        "plot_no": "299",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.566288429000053, 23.793009660000052],
+              [57.565989622000075, 23.792440356000043],
+              [57.565293532000055, 23.792749644000025],
+              [57.565592435000042, 23.793319040000029],
+              [57.566288429000053, 23.793009660000052]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-04-064-01-219",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Barka",
+        "city": "Sumhan Subd. Plan",
+        "plot_no": "2",
+        "block_no": "8916 SE",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.885228776000076, 23.656782945000032],
+              [57.885037609000051, 23.656175719000032],
+              [57.884378403000028, 23.656351812000025],
+              [57.884569569000064, 23.656959038000025],
+              [57.885228776000076, 23.656782945000032]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-04-088-01-380",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Barka",
+        "city": "Somhan North",
+        "plot_no": "380",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.90037320700003, 23.66787604700005],
+              [57.899962618000075, 23.66718693100006],
+              [57.899601412000038, 23.667309153000076],
+              [57.899640583000064, 23.667832066000074],
+              [57.900080786000046, 23.667804132000072],
+              [57.90008748200006, 23.667894234000073],
+              [57.90037320700003, 23.66787604700005]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-04-263-01-746",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Barka",
+        "city": null,
+        "plot_no": "746",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.767251393000038, 23.679031171000076],
+              [57.767280958000072, 23.678971592000039],
+              [57.766885933000083, 23.677913242000045],
+              [57.766822393000041, 23.677881311000078],
+              [57.766210055000045, 23.67801946000003],
+              [57.766668240000058, 23.679247217000068],
+              [57.767251393000038, 23.679031171000076]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-26-037-01-871",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah South",
+        "wilayat": "Wadi Al Maawil",
+        "city": "Al Hubra",
+        "plot_no": "871",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.837549739000053, 23.474142001000075],
+              [57.837363333000042, 23.473867421000023],
+              [57.837051408000036, 23.473408168000049],
+              [57.83698385200006, 23.47339389800004],
+              [57.836569014000077, 23.473633675000031],
+              [57.836553542000047, 23.473695901000042],
+              [57.836865466000063, 23.474155154000073],
+              [57.837051872000075, 23.474429735000058],
+              [57.837549739000053, 23.474142001000075]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-17-065-01-504",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "Al Khaburah",
+        "city": "A' Sarhat",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.088219099000071, 23.969440854000027],
+              [57.087681786000076, 23.969110839000052],
+              [57.087620117000029, 23.969201379000026],
+              [57.087605269000051, 23.969193168000061],
+              [57.087387155000044, 23.969498680000072],
+              [57.08793567500004, 23.969827877000057],
+              [57.088219099000071, 23.969440854000027]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-17-083-01-006",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "Al Khaburah",
+        "city": "Sarhat Govt.Centre",
+        "plot_no": "6",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.084925363000082, 23.962885082000071],
+              [57.084423682000079, 23.962579334000054],
+              [57.084375427000055, 23.962588301000039],
+              [57.084101044000079, 23.962968538000041],
+              [57.084633208000071, 23.963292788000047],
+              [57.084925363000082, 23.962885082000071]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-36-009-01-296",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "Shinas",
+        "city": null,
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.453703542000028, 24.714861047000056],
+              [56.452543098000035, 24.714635178000037],
+              [56.452357691000032, 24.715430163000065],
+              [56.453518143000053, 24.715655942000069],
+              [56.453703542000028, 24.714861047000056]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-34-159-02-176",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Batinah North",
+        "wilayat": "Saham",
+        "city": null,
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.933936833000075, 24.05724060700004],
+              [56.933306196000046, 24.05654736300005],
+              [56.932460718000073, 24.057195875000048],
+              [56.933091353000066, 24.057889122000063],
+              [56.933936833000075, 24.05724060700004]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-33-308-01-001",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Al Batinah South",
+        "wilayat": "Ar Rustaq",
+        "city": "Ghashab R/C",
+        "plot_no": "1",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.428944349000062, 23.434987234000062],
+              [57.428726373000075, 23.434603117000051],
+              [57.428596276000064, 23.434665981000023],
+              [57.428814252000052, 23.435050099000023],
+              [57.428944349000062, 23.434987234000062]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-23-022-01-444",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Al Batinah South",
+        "wilayat": "Al Musanaah",
+        "city": "Al Tarif",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.616360643000064, 23.74964138200005],
+              [57.616148189000057, 23.74932618400004],
+              [57.615798022000035, 23.749566304000041],
+              [57.616028684000071, 23.749851352000064],
+              [57.616360643000064, 23.74964138200005]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-06-089-02-329",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Bidbid",
+        "city": "Sieh Maden 2",
+        "plot_no": "329",
+        "block_no": "2",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.101040885000032, 23.393933883000045],
+              [58.100469083000064, 23.393810735000045],
+              [58.100282311000058, 23.394549605000066],
+              [58.100854115000061, 23.394672664000041],
+              [58.101040885000032, 23.393933883000045]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-06-057-01-082",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Bidbid",
+        "city": "Quidaiyah",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.110234264000042, 23.399813436000045],
+              [58.109814508000056, 23.399409071000036],
+              [58.109885132000045, 23.399346700000024],
+              [58.109343547000037, 23.398824968000042],
+              [58.108566400000029, 23.399512395000045],
+              [58.109527742000068, 23.400438407000024],
+              [58.110234264000042, 23.399813436000045]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9-50-025-01-845",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "Al Buraymi",
+        "city": "B6 Subd",
+        "plot_no": "1497",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.783045447000063, 24.265042611000069],
+              [55.78309523300004, 24.26499704400004],
+              [55.783096168000043, 24.264909362000026],
+              [55.783105216000081, 24.26397023100003],
+              [55.78213654700005, 24.263965179000024],
+              [55.782160296000029, 24.264904121000029],
+              [55.782163921000063, 24.265050810000048],
+              [55.783045447000063, 24.265042611000069]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9-52-019-04-049",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "As Sunaynah",
+        "city": "Sunaynah",
+        "plot_no": "49",
+        "block_no": "Phase 2,3",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.973059933130131, 23.598802962446204],
+              [55.972895121715972, 23.598282804250744],
+              [55.971954336786773, 23.598535879955488],
+              [55.972105369120911, 23.599012775099155],
+              [55.972166188640308, 23.599043434983486],
+              [55.973059933130131, 23.598802962446204]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9-52-019-04-041",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "As Sunaynah",
+        "city": "Sunaynah",
+        "plot_no": "41",
+        "block_no": "Phase 2,3",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.969765977426761, 23.599846078607413],
+              [55.969560432487221, 23.599197303932879],
+              [55.9694996132719, 23.599166552727681],
+              [55.969029263859703, 23.599293125814217],
+              [55.96899589547953, 23.599349082699227],
+              [55.969201438083402, 23.599997949242347],
+              [55.969765977426761, 23.599846078607413]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9-51-103-02-186",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "Mahadah",
+        "city": "M4 Subd",
+        "plot_no": "186",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.95993150005588, 24.414213379595147],
+              [55.959485500539195, 24.413457125894812],
+              [55.958834334035728, 24.413989536409407],
+              [55.959442479360185, 24.414613158573843],
+              [55.95993150005588, 24.414213379595147]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-01-100-02-014",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Adam",
+        "city": "Al-Qalah Com",
+        "plot_no": "14",
+        "block_no": "18 NE",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.503847994000068, 22.414770910000072],
+              [57.503988605000075, 22.414533333000065],
+              [57.504011586000047, 22.414493513000025],
+              [57.504148400000076, 22.414254050000068],
+              [57.504166162000047, 22.41422192400006],
+              [57.502815866000049, 22.41358987600006],
+              [57.50279781200004, 22.413621912000053],
+              [57.502662942000029, 22.41386218100007],
+              [57.502443422000056, 22.414285287000041],
+              [57.503766277000068, 22.414904595000053],
+              [57.503847994000068, 22.414770910000072]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-01-104-01-008",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Adam",
+        "city": null,
+        "plot_no": "8",
+        "block_no": "37 SW",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.515573553000081, 22.399825086000078],
+              [57.516115343000081, 22.399187012000027],
+              [57.516107336000061, 22.399123530000054],
+              [57.515764241000056, 22.398871676000056],
+              [57.515162187000044, 22.399580676000028],
+              [57.515505380000036, 22.39983262100003],
+              [57.515573553000081, 22.399825086000078]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-30-044-01-816",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "J.Akdahr",
+        "city": "Sih Qattanh",
+        "plot_no": "816",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.677855854000029, 23.078261596000061],
+              [57.677535477000049, 23.077920794000079],
+              [57.677056664000077, 23.078306209000061],
+              [57.677377040000067, 23.078646922000075],
+              [57.677855854000029, 23.078261596000061]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-11-047-01-398",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Al Hamra",
+        "city": "Wadi Goul",
+        "plot_no": "398",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.267746248000037, 23.10887989500003],
+              [57.268610853000041, 23.107911942000044],
+              [57.268604282000069, 23.107848358000069],
+              [57.268114961000038, 23.107474388000071],
+              [57.267188186000055, 23.108512001000065],
+              [57.267677508000077, 23.108885973000042],
+              [57.267746248000037, 23.10887989500003]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-06-083-01-059",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Bidbid",
+        "city": "Thomid Int",
+        "plot_no": "59",
+        "block_no": "1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.104510591000064, 23.415663518000031],
+              [58.104602833000058, 23.415504173000045],
+              [58.104324757000029, 23.415371109000034],
+              [58.104211288000045, 23.415567182000075],
+              [58.104444389000037, 23.415682049000054],
+              [58.104510591000064, 23.415663518000031]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-03-107-01-790",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Bahla",
+        "city": "Hay Sa'Ad",
+        "plot_no": "790",
+        "block_no": "35 SW",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.329132428000037, 23.016293183000073],
+              [57.329560307000065, 23.016067632000045],
+              [57.329323694000038, 23.01568293400004],
+              [57.329257193000046, 23.015666089000035],
+              [57.32887171200008, 23.015869148000036],
+              [57.328486230000067, 23.016072296000061],
+              [57.328467934000059, 23.016133943000057],
+              [57.328704547000029, 23.01651864300004],
+              [57.329132428000037, 23.016293183000073]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-03-037-01-334",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Bahla",
+        "city": "Al Mamoorah",
+        "plot_no": null,
+        "block_no": "13 SE",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.316199981000068, 22.999222134000036],
+              [57.315838441000039, 22.998628535000023],
+              [57.315710796000076, 22.998413249000066],
+              [57.314443748000031, 22.999135374000048],
+              [57.314952808000044, 22.999932931000046],
+              [57.316199981000068, 22.999222134000036]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-38-128-01-667",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Samail",
+        "city": "Swereig Pa",
+        "plot_no": "667",
+        "block_no": "1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.94172010300008, 23.277090458000032],
+              [57.941481450000083, 23.276214563000053],
+              [57.939585228000055, 23.276655681000022],
+              [57.939823968000042, 23.277531579000026],
+              [57.94172010300008, 23.277090458000032]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-20-031-01-009",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Manah",
+        "city": "Al-Bayad P-A",
+        "plot_no": "9",
+        "block_no": "29 NE",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.613551963000077, 22.785541084000045],
+              [57.613034830000061, 22.78547369100005],
+              [57.612569526000073, 22.786105202000044],
+              [57.612451185000054, 22.78700774400005],
+              [57.613549421000073, 22.787131626000075],
+              [57.613551963000077, 22.785541084000045]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-28-029-01-111",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Nizwa",
+        "city": "K.Al Sarani",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.536229305000063, 22.963417949000075],
+              [57.536199998000029, 22.963382456000033],
+              [57.536157881000065, 22.963413763000062],
+              [57.536116526000058, 22.963365936000059],
+              [57.536159811000061, 22.963333992000059],
+              [57.535184941000068, 22.962156973000049],
+              [57.534491267000078, 22.962581439000076],
+              [57.534642445000031, 22.962575149000031],
+              [57.535574147000034, 22.963888722000036],
+              [57.536229305000063, 22.963417949000075]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-29-011-03-001",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "B.Almuz",
+        "city": "B.Al Muz P-A",
+        "plot_no": "1",
+        "block_no": "74 NE",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.658640164000076, 22.919062297000039],
+              [57.65828480600004, 22.918494954000039],
+              [57.657924932000071, 22.918688309000061],
+              [57.657912245000034, 22.918746987000077],
+              [57.658283639000047, 22.919202253000037],
+              [57.658355183000083, 22.919215596000072],
+              [57.658640164000076, 22.919062297000039]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-28-209-01-1291",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Nizwa",
+        "city": "Al Abriah",
+        "plot_no": "1291",
+        "block_no": "Phase 1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.597097363000046, 22.871442309000031],
+              [57.596066071000052, 22.870883025000069],
+              [57.594812954000076, 22.872867117000055],
+              [57.596238741000036, 22.87364038000004],
+              [57.597097363000046, 22.871442309000031]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-30-041-01-258",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "J.Akdahr",
+        "city": "Saiq",
+        "plot_no": "258",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.633241410000039, 23.066555447000042],
+              [57.633274636000067, 23.066458027000067],
+              [57.633066826000061, 23.066088859000047],
+              [57.632429797000043, 23.066395915000044],
+              [57.632661264000035, 23.066835086000026],
+              [57.633241410000039, 23.066555447000042]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-28-102-01-006",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Nizwa",
+        "city": "Hay Al-Tourath",
+        "plot_no": "6",
+        "block_no": "81 NW",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.571829779000041, 22.893583683000031],
+              [57.571750660000077, 22.893223080000041],
+              [57.571350807000044, 22.892779257000029],
+              [57.571282143000076, 22.892773541000054],
+              [57.570870460000037, 22.893091911000056],
+              [57.570864291000078, 22.893155529000069],
+              [57.571334182000044, 22.893677062000052],
+              [57.571829779000041, 22.893583683000031]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9-50-025-01-429",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "Al Buraymi",
+        "city": "B6 Subd",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.783113256000036, 24.263085186000069],
+              [55.782114233000073, 24.263040967000052],
+              [55.78213646200004, 24.263963733000026],
+              [55.783104810000054, 24.263971492000053],
+              [55.783113256000036, 24.263085186000069]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-14-092-01-003",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Izki",
+        "city": "Tuoq-Pa",
+        "plot_no": "3",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.741430152000078, 22.914603100000022],
+              [57.741594958000064, 22.914586524000072],
+              [57.74153644900008, 22.914083646000051],
+              [57.741371643000036, 22.914100132000044],
+              [57.741342599000063, 22.914103068000031],
+              [57.741401109000037, 22.914605945000062],
+              [57.741430152000078, 22.914603100000022]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4-28-111-02-008",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Ad Dakhliyah",
+        "wilayat": "Nizwa",
+        "city": "Firq Al Jaser",
+        "plot_no": "8",
+        "block_no": "2",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.545902459819608, 22.859916133947902],
+              [57.54602712781719, 22.85974343816644],
+              [57.546012176194814, 22.859734184243866],
+              [57.545836379426454, 22.859624939428663],
+              [57.545685052800138, 22.859834492986966],
+              [57.545834957469104, 22.859928379797644],
+              [57.545902459819608, 22.859916133947902]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7-63-006-01-001",
+        "landUse": "GOVERNMENT",
+        "governorat": "Dhofar",
+        "wilayat": "Eastern Nejd",
+        "city": "Marmul",
+        "plot_no": "2",
+        "block_no": null,
+        "coordsCode": "32639",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [55.211554181000054, 18.170016262000047],
+              [55.211327507000078, 18.16961986900003],
+              [55.210334236000051, 18.170139885000026],
+              [55.210559208000063, 18.170536263000031],
+              [55.211554181000054, 18.170016262000047]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-03-009-01-290",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Amrat",
+        "city": "Al Mahaj",
+        "plot_no": "290",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.507602293000048, 23.518805791000034],
+              [58.507643404000078, 23.518717885000058],
+              [58.507408418000068, 23.518172358000072],
+              [58.507312990000059, 23.518134360000033],
+              [58.50665312600006, 23.518376088000025],
+              [58.50694242600008, 23.519047520000072],
+              [58.507602293000048, 23.518805791000034]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-001-01-257",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Madinat Al Erfaan",
+        "plot_no": "257",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.292982202000076, 23.568852478000053],
+              [58.29199673200003, 23.567638749000025],
+              [58.290780622000057, 23.568477648000055],
+              [58.291724139000053, 23.569639714000061],
+              [58.291822047000039, 23.569652718000043],
+              [58.292982202000076, 23.568852478000053]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-010-03-148",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Khuwair",
+        "plot_no": "148",
+        "block_no": "Phase 3",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.42807530500005, 23.574974472000065],
+              [58.427788847000045, 23.574977104000027],
+              [58.427239538000038, 23.575317286000029],
+              [58.426869113000066, 23.575546640000027],
+              [58.426876705000041, 23.576702251000029],
+              [58.427807449000056, 23.576697042000035],
+              [58.428093923000063, 23.576695493000045],
+              [58.42807530500005, 23.574974472000065]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-005-01-430",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Ghala Hts",
+        "plot_no": "430",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.334151557000041, 23.588616813000044],
+              [58.334369603000027, 23.588599045000024],
+              [58.334446076000063, 23.588525597000057],
+              [58.334323224000059, 23.587346289000038],
+              [58.333319515000028, 23.587355720000062],
+              [58.33356998000005, 23.588616388000048],
+              [58.333655057000044, 23.588657291000061],
+              [58.334151557000041, 23.588616813000044]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-03-008-02-1206",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Al Amrat",
+        "city": "Al Atkiyah",
+        "plot_no": "1206",
+        "block_no": "Phase 2",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.48843183200006, 23.397256468000023],
+              [58.488005721000036, 23.397046584000066],
+              [58.487819119000051, 23.397369409000078],
+              [58.488245328000062, 23.397579293000035],
+              [58.48843183200006, 23.397256468000023]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-004-02-1400",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Azaiba",
+        "plot_no": "1400",
+        "block_no": "Phase 2",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.370496117000073, 23.601788807000048],
+              [58.370387404000041, 23.60143692500003],
+              [58.370314792000045, 23.601201677000063],
+              [58.370222407000028, 23.600902573000042],
+              [58.369085191000067, 23.600898788000052],
+              [58.369084024000074, 23.601192215000026],
+              [58.369082760000083, 23.601485733000061],
+              [58.369081990000041, 23.601666360000024],
+              [58.369080662000044, 23.601991487000078],
+              [58.369685340000046, 23.60199355900005],
+              [58.370496117000073, 23.601788807000048]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-02-004-02-719",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Mutrah",
+        "city": "Muttrah",
+        "plot_no": "719",
+        "block_no": "Phase 2",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.122031013486684, 23.656314764691977],
+              [58.121954101343746, 23.656148598892408],
+              [58.121683517075766, 23.656254869414106],
+              [58.121760428950935, 23.656421035356338],
+              [58.122031013486684, 23.656314764691977]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-007-01-2772",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh",
+        "plot_no": "2772",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.135536713000079, 23.589578945000028],
+              [58.135695772000076, 23.589534701000048],
+              [58.135008581000079, 23.587718601000063],
+              [58.133964492000075, 23.588009095000075],
+              [58.134658417000082, 23.589823435000028],
+              [58.135536713000079, 23.589578945000028]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-007-01-136",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh",
+        "plot_no": "136",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.136098465000032, 23.590607595000051],
+              [58.136128349000046, 23.590550026000074],
+              [58.135816576000082, 23.589736667000068],
+              [58.135753604000058, 23.589707142000066],
+              [58.134770507000042, 23.589980849000028],
+              [58.134739921000062, 23.590036526000063],
+              [58.135068045000082, 23.590894474000038],
+              [58.135130511000057, 23.59092210600005],
+              [58.136098465000032, 23.590607595000051]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-006-01-4521",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh Village",
+        "plot_no": "4521",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.159463192000032, 23.565680910000026],
+              [58.159599354000079, 23.565610803000027],
+              [58.159299506000082, 23.565115493000064],
+              [58.159163242000034, 23.565185149000058],
+              [58.158754565000038, 23.565395921000061],
+              [58.159054314000059, 23.565891143000044],
+              [58.159463192000032, 23.565680910000026]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-006-01-4523",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh Village",
+        "plot_no": "4523",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.158058158000074, 23.566403791000027],
+              [58.158509565000031, 23.566171478000058],
+              [58.158209720000059, 23.565676256000074],
+              [58.157758314000034, 23.56590847700005],
+              [58.157664872000055, 23.565956589000052],
+              [58.157964716000038, 23.566451812000025],
+              [58.158058158000074, 23.566403791000027]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-006-01-4584",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh Village",
+        "plot_no": "4584",
+        "block_no": "Phase 1",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.165476946000069, 23.561691061000033],
+              [58.165148947000034, 23.561293514000056],
+              [58.164725863000058, 23.561590118000026],
+              [58.165053959000034, 23.56198766600005],
+              [58.165476946000069, 23.561691061000033]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-073-06-1019",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Mabelah South",
+        "plot_no": "1019",
+        "block_no": "Phase 4",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.116876175000073, 23.600545090000026],
+              [58.11661790800008, 23.599986794000074],
+              [58.116215457000067, 23.600144851000039],
+              [58.116473724000059, 23.600703147000047],
+              [58.116876175000073, 23.600545090000026]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-073-06-339",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Mabelah South",
+        "plot_no": "339",
+        "block_no": "Phase 4",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.117048387000068, 23.600917225000046],
+              [58.116876175000073, 23.600545090000026],
+              [58.116473724000059, 23.600703147000047],
+              [58.116071271000067, 23.600861294000026],
+              [58.116243482000073, 23.60123352100004],
+              [58.117048387000068, 23.600917225000046]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-060-06-1961",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Khoudh",
+        "plot_no": "1961",
+        "block_no": "Phase 6",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.137213379000059, 23.590046236000035],
+              [58.136975575000065, 23.589424784000073],
+              [58.136912406000079, 23.58939526100005],
+              [58.136067137000055, 23.589630485000043],
+              [58.136036550000028, 23.589686163000067],
+              [58.136289091000037, 23.590346525000029],
+              [58.137213379000059, 23.590046236000035]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-073-11-485",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Mabela Ph4",
+        "plot_no": "485",
+        "block_no": "Block 11",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.110782650000033, 23.629289406000055],
+              [58.110631083000044, 23.628961824000044],
+              [58.10994499800006, 23.629231361000052],
+              [58.11009656400006, 23.629558943000063],
+              [58.110782650000033, 23.629289406000055]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-073-09-1000",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Mabelah South",
+        "plot_no": "1000",
+        "block_no": "Phase 4",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.100147605000075, 23.607232249000049],
+              [58.099879513000076, 23.606652678000046],
+              [58.099761829000045, 23.606609074000062],
+              [58.099496790000046, 23.60671319000005],
+              [58.099800014000039, 23.607368741000073],
+              [58.100147605000075, 23.607232249000049]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-003-08-5548",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Mabelah South",
+        "plot_no": "5548",
+        "block_no": "Phase 8",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.141331132000062, 23.604448803000025],
+              [58.138932958000055, 23.603298727000038],
+              [58.138112929000044, 23.604750779000028],
+              [58.140511123000067, 23.605900867000059],
+              [58.141331132000062, 23.604448803000025]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-43-090-01-3775",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Amrat",
+        "city": "Al Hajer",
+        "plot_no": "3775",
+        "block_no": "Phase 1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.497065165000038, 23.346263186000044],
+              [58.496810701000072, 23.345803765000028],
+              [58.496353614000043, 23.346019641000055],
+              [58.496608078000065, 23.346479062000071],
+              [58.497065165000038, 23.346263186000044]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-43-090-01-3776",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Amrat",
+        "city": "Al Hajer",
+        "plot_no": "3776",
+        "block_no": "Phase 1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.496810701000072, 23.345803765000028],
+              [58.496596568000029, 23.34541702100006],
+              [58.496464966000076, 23.345377729000063],
+              [58.496094861000074, 23.34555249400006],
+              [58.496353614000043, 23.346019641000055],
+              [58.496810701000072, 23.345803765000028]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-43-052-03-152",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Al Amrat",
+        "city": "Madinat Al Nahdha",
+        "plot_no": "152",
+        "block_no": "Phase 5",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.488111402000072, 23.500255928000058],
+              [58.488435509000055, 23.500036271000056],
+              [58.488109436000059, 23.499627029000067],
+              [58.488041075000069, 23.499617386000068],
+              [58.487692284000047, 23.499853715000029],
+              [58.488047359000063, 23.500299346000077],
+              [58.488111402000072, 23.500255928000058]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-25-048-01-022",
+        "landUse": "COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Mutrah",
+        "city": "M.B.D",
+        "plot_no": "125",
+        "block_no": "CBD-NORTH",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.547478991000048, 23.599419328000067],
+              [58.547345639000071, 23.599362408000047],
+              [58.547223784000039, 23.599608987000067],
+              [58.547358311000039, 23.59966580400004],
+              [58.547478991000048, 23.599419328000067]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-05-059-01-004",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Khuwair",
+        "plot_no": "4",
+        "block_no": "AREA 18",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.434415202000082, 23.59996054100003],
+              [58.434401653000066, 23.598272317000067],
+              [58.434385990000067, 23.59825584400005],
+              [58.434385060000068, 23.598206272000027],
+              [58.433596468000076, 23.597970796000027],
+              [58.433516233000034, 23.598045229000036],
+              [58.433539557000074, 23.599966726000048],
+              [58.433549735000042, 23.599974490000022],
+              [58.433552700000064, 23.600012844000048],
+              [58.433588753000038, 23.600011879000078],
+              [58.433599033000064, 23.600020002000065],
+              [58.434362472000032, 23.600014040000076],
+              [58.434415202000082, 23.59996054100003]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-15-082-01-743",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Jalan Bani Bu Ali",
+        "city": "Govt Control",
+        "plot_no": "743",
+        "block_no": "1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.321920460000058, 22.04803183100006],
+              [59.322296301000051, 22.047505957000055],
+              [59.322282880000046, 22.047443303000023],
+              [59.320429250000075, 22.046291887000052],
+              [59.320362043000046, 22.046304487000043],
+              [59.319986197000048, 22.046830357000033],
+              [59.319999616000075, 22.046893011000066],
+              [59.321853253000029, 22.04804443200004],
+              [59.321920460000058, 22.04803183100006]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-15-048-01-783",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "J.Bu Ali",
+        "city": "Seah Gireha",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.338649661000034, 22.020023552000055],
+              [59.338190101000066, 22.019346772000063],
+              [59.337416267000037, 22.019776952000029],
+              [59.337868074000028, 22.020418089000032],
+              [59.338649661000034, 22.020023552000055]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-39-058-01-735",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Sur",
+        "city": "Al Rusaq P.A",
+        "plot_no": "G-2",
+        "block_no": "79 SW",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.505554559000075, 22.584147815000051],
+              [59.505539271000032, 22.583985189000032],
+              [59.504780255000071, 22.582940842000028],
+              [59.504094975000044, 22.583382523000068],
+              [59.504253609000045, 22.583617667000055],
+              [59.50395579700006, 22.584605460000034],
+              [59.505460761000052, 22.584997910000027],
+              [59.505554559000075, 22.584147815000051]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-39-058-01-076",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Sur",
+        "city": "Al Rusaq P.A",
+        "plot_no": "110",
+        "block_no": "60 SW",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.497064874000046, 22.593206494000071],
+              [59.49611767500005, 22.591630572000042],
+              [59.495522297000036, 22.591939646000071],
+              [59.49646509300004, 22.593508779000047],
+              [59.497064874000046, 22.593206494000071]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-39-022-02-343",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Sur",
+        "city": "Ras Al Had",
+        "plot_no": "343",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.794818748000068, 22.513801031000071],
+              [59.794434931000069, 22.513744959000064],
+              [59.794359996000082, 22.514187930000048],
+              [59.794743813000082, 22.514244001000066],
+              [59.794818748000068, 22.513801031000071]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-39-125-01-020",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Sur",
+        "city": "Hawajir",
+        "plot_no": "20",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.357135509000045, 22.548347271000068],
+              [59.35620545900008, 22.548219961000029],
+              [59.356123187000037, 22.548738603000061],
+              [59.356865633000041, 22.549082915000042],
+              [59.357135509000045, 22.548347271000068]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-18-002-04-331",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Al Kamil & Alwafi",
+        "city": "Al Kamil",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.199474338000073, 22.203215537000062],
+              [59.199461980000081, 22.202229292000027],
+              [59.198524350000071, 22.202239247000023],
+              [59.198502856000061, 22.20230987900004],
+              [59.198515500000042, 22.202468],
+              [59.198851779000051, 22.203351446000056],
+              [59.199474338000073, 22.203215537000062]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-12-068-01-080",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Ibra",
+        "city": "Al Yahmadi-2",
+        "plot_no": "80",
+        "block_no": "1",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.490633268000067, 22.779914835000056],
+              [58.489748896000037, 22.77866939300003],
+              [58.48968145300006, 22.778656474000059],
+              [58.488786628000071, 22.779202842000075],
+              [58.489697702000058, 22.780485975000033],
+              [58.490633268000067, 22.779914835000056]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-07-116-01-012",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Bidiyah",
+        "city": "Biddiyah Govt. Center",
+        "plot_no": "12",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.849155906000078, 22.460015162000047],
+              [58.848082016000035, 22.45959343800007],
+              [58.84732579100006, 22.461257102000047],
+              [58.84839979000003, 22.46167882900005],
+              [58.849155906000078, 22.460015162000047]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11-03-013-02-484",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Wusta",
+        "wilayat": "Ad Duqm",
+        "city": "Al Duqum P.A",
+        "plot_no": "484",
+        "block_no": "13",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [57.630329413000027, 19.618480122000051],
+              [57.630330745000037, 19.618479395000065],
+              [57.630185482000059, 19.618229046000067],
+              [57.629921189000072, 19.618366604000073],
+              [57.630066452000051, 19.618617044000075],
+              [57.630329413000027, 19.618480122000051]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-07-116-01-002 A",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Bidiyah",
+        "city": "Biddiyah Govt. Center",
+        "plot_no": "2A",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.841996362000032, 22.457203527000047],
+              [58.840967244000069, 22.456799395000075],
+              [58.840903532000027, 22.456823421000024],
+              [58.840606963000027, 22.457475857000077],
+              [58.84168091500004, 22.457897632000027],
+              [58.841996362000032, 22.457203527000047]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-08-033-01-459",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Dama Wa At Taiyin",
+        "city": "Mehlah",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.59785604700005, 23.049790116000054],
+              [58.598038063000047, 23.049443469000039],
+              [58.597397313000045, 23.04916419500006],
+              [58.597006733000057, 23.04989875800004],
+              [58.597263432000034, 23.050009507000027],
+              [58.59785604700005, 23.049790116000054]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-08-033-01-260",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Dama Wa At Taiyin",
+        "city": "Malahlan",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.607626505000042, 23.044234073000041],
+              [58.607472757000039, 23.044057090000024],
+              [58.607244283000057, 23.044227661000036],
+              [58.607397450000065, 23.044405102000042],
+              [58.607626505000042, 23.044234073000041]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-41-020-01-418",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Wadi Bani Khalid",
+        "city": "Muzeraa",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.093885169000032, 22.580108240000072],
+              [59.09387515700007, 22.579503836000072],
+              [59.093536628000038, 22.579609291000054],
+              [59.093546260000039, 22.580175775000043],
+              [59.093885169000032, 22.580108240000072]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5-13-049-05-277",
+        "landUse": "GOVERNMENT",
+        "governorat": "Adh Dhahirah",
+        "wilayat": "Ibri",
+        "city": "Kawas",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.518205149000039, 23.240318542000068],
+              [56.518193150000059, 23.239415281000049],
+              [56.51765559200004, 23.239421397000058],
+              [56.517607334000047, 23.23946713600003],
+              [56.517618090000042, 23.240280063000057],
+              [56.517667588000052, 23.240324658000077],
+              [56.518205149000039, 23.240318542000068]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8-53-012-03-880",
+        "landUse": "COMMERCIAL",
+        "governorat": "Musandam",
+        "wilayat": "Khasab",
+        "city": "Khasab",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.251265724000064, 26.183854713000073],
+              [56.251467305000062, 26.183818923000047],
+              [56.251528054000062, 26.183740323000052],
+              [56.251349752000067, 26.18359438300007],
+              [56.251194988000066, 26.18352378000003],
+              [56.250832299000081, 26.183588796000038],
+              [56.250901635000048, 26.183919451000065],
+              [56.251265724000064, 26.183854713000073]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11-04-009-01-273",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Wusta",
+        "wilayat": "Al Jazir",
+        "city": "Al Kahal",
+        "plot_no": "273",
+        "block_no": null,
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.588122351000038, 18.583668878000026],
+              [56.588475324000058, 18.583264118000045],
+              [56.588474503000043, 18.58325074000004],
+              [56.58810926700005, 18.582960730000025],
+              [56.58802557000007, 18.582964975000039],
+              [56.587727245000053, 18.583306679000032],
+              [56.587741099000027, 18.583378380000056],
+              [56.587746116000062, 18.583381192000047],
+              [56.588108036000051, 18.583670383000026],
+              [56.588122351000038, 18.583668878000026]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11-04-001-03-1081",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Wusta",
+        "wilayat": "Al Jazir",
+        "city": "Al Kahal",
+        "plot_no": "1081",
+        "block_no": "3",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.591690680000056, 18.621682668000062],
+              [56.591267435000077, 18.620639502000074],
+              [56.590552599000034, 18.620904114000041],
+              [56.590975842000034, 18.621946468000033],
+              [56.591690680000056, 18.621682668000062]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11-01-002-02-080",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Wusta",
+        "wilayat": "Hayma",
+        "city": "Haima-W",
+        "plot_no": "80",
+        "block_no": "2",
+        "coordsCode": "32640",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.288162810000074, 19.938089694000041],
+              [56.287943313000028, 19.937771914000052],
+              [56.287543361000075, 19.938018897000063],
+              [56.287762763000046, 19.938336677000052],
+              [56.288162810000074, 19.938089694000041]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-31-073-01-027",
+        "landUse": "GOVERNMENT",
+        "governorat": "Al Buraymi",
+        "wilayat": "Al Qabil",
+        "city": "Mudayrib-7",
+        "plot_no": "27",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.675957756000059, 22.597973962000026],
+              [58.676480892000029, 22.597439175000034],
+              [58.676477593000072, 22.597375447000047],
+              [58.675253767000072, 22.596343196000078],
+              [58.675185038000052, 22.596346261000065],
+              [58.674661900000046, 22.596881044000042],
+              [58.674665201000039, 22.596944862000043],
+              [58.675889123000047, 22.597977026000024],
+              [58.675957756000059, 22.597973962000026]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-22-350-01-007",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Al Mudaybi",
+        "city": "Mudhaibi-3 Gov.",
+        "plot_no": "7",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.122760218000053, 22.58567550600003],
+              [58.122464028000081, 22.585147706000043],
+              [58.121834455000055, 22.585457231000078],
+              [58.122110311000029, 22.585948772000052],
+              [58.122760218000053, 22.58567550600003]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-22-350-01-004",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Al Mudaybi",
+        "city": "Mudhaibi-3 Govr",
+        "plot_no": "4",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.126533589000076, 22.591498891000072],
+              [58.12662699100008, 22.591405107000071],
+              [58.126603611000064, 22.590850652000029],
+              [58.125923168000043, 22.590875383000025],
+              [58.125946544000044, 22.591429838000067],
+              [58.126047639000035, 22.591516568000031],
+              [58.126533589000076, 22.591498891000072]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-22-055-02-113",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Al Mudaybi",
+        "city": "Al Mudhaibi",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.121281063000026, 22.583965154000055],
+              [58.121880155000042, 22.583904339000071],
+              [58.121331823000048, 22.582796486000063],
+              [58.120807526000078, 22.583024428000044],
+              [58.120745975000034, 22.583051233000049],
+              [58.121209529000055, 22.583972428000038],
+              [58.121281063000026, 22.583965154000055]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-22-008-01-248",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Al Mudaybi",
+        "city": "Al Aynin",
+        "plot_no": null,
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.128913938000039, 22.592356210000048],
+              [58.128858605000062, 22.591068602000064],
+              [58.128510295000069, 22.59015339900003],
+              [58.128044463000037, 22.590275632000044],
+              [58.127981693000038, 22.590356013000076],
+              [58.128067759000032, 22.592360976000066],
+              [58.128138504000049, 22.592423800000063],
+              [58.128848599000037, 22.592419808000045],
+              [58.128913938000039, 22.592356210000048]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8-53-012-03-546",
+        "landUse": "COMMERCIAL",
+        "governorat": "Musandam",
+        "wilayat": "Khasab",
+        "city": "Khasab",
+        "plot_no": "KH-726",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.244768604000058, 26.172711364000065],
+              [56.244700555000065, 26.172510374000069],
+              [56.244555905000027, 26.172549975000038],
+              [56.244583790000036, 26.172632560000068],
+              [56.244574667000052, 26.172635220000075],
+              [56.244614630000058, 26.172753625000041],
+              [56.244768604000058, 26.172711364000065]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-05-090-01-476",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Bausher",
+        "plot_no": "434",
+        "block_no": "AREA 35",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.410209150000071, 23.556346914000073],
+              [58.409861381000042, 23.556081660000075],
+              [58.409454750000066, 23.556534552000073],
+              [58.409802520000028, 23.556799897000076],
+              [58.410209150000071, 23.556346914000073]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-05-082-01-198",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Airport Hts",
+        "plot_no": "141",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.293954792000079, 23.570052641000075],
+              [58.293049389000032, 23.570015555000055],
+              [58.292972715000076, 23.570080225000027],
+              [58.292932405000045, 23.570917321000024],
+              [58.293911232000028, 23.570957409000073],
+              [58.293954792000079, 23.570052641000075]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-32-050-01-500",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Qurayyat",
+        "city": "Qariyib",
+        "plot_no": "754",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.892643519000046, 23.216626749000056],
+              [58.892066004000071, 23.216210010000054],
+              [58.891702881000072, 23.216635266000026],
+              [58.89228049500008, 23.217052095000042],
+              [58.892643519000046, 23.216626749000056]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-32-050-01-499",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Qurayyat",
+        "city": "Qariyib",
+        "plot_no": "753",
+        "block_no": null,
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.893452680000053, 23.217209557000047],
+              [58.892682109000077, 23.21665445800005],
+              [58.892319085000054, 23.217079804000036],
+              [58.893089559000032, 23.217634816000043],
+              [58.893452680000053, 23.217209557000047]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-39-108-01-142",
+        "landUse": "COMMERCIAL",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Sur",
+        "city": "Barbera Subd",
+        "plot_no": "142",
+        "block_no": "2",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.473177958000065, 22.604021929000055],
+              [59.473128547000044, 22.603977549000035],
+              [59.472605178000038, 22.603985613000077],
+              [59.472615082000061, 22.604539878000026],
+              [59.473187057000075, 22.60453106600005],
+              [59.473177958000065, 22.604021929000055]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5-13-190-02-298",
+        "landUse": "RESIDENTIAL/COMMERCIAL",
+        "governorat": "Adh Dhahirah",
+        "wilayat": "Ibri",
+        "city": "Hai Al-Mamoorah",
+        "plot_no": "298",
+        "block_no": "2",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [56.583788020000043, 23.305291212000043],
+              [56.583618422000029, 23.305201153000041],
+              [56.583496539000066, 23.305396938000058],
+              [56.58366613700008, 23.30548699700006],
+              [56.583788020000043, 23.305291212000043]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6-16-042-02-942",
+        "landUse": "GOVERNMENT",
+        "governorat": "Ash Sharqiyah North",
+        "wilayat": "Jalan Bani Buhasan",
+        "city": "Seah Al Makahma",
+        "plot_no": "942",
+        "block_no": "2",
+        "coordsCode": "3440",
+        "organizati": "Ministry of Social Affairs and Labour"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [59.262587326000073, 22.131551935000061],
+              [59.262910717000068, 22.131077283000025],
+              [59.262895766000042, 22.131015006000041],
+              [59.262546083000075, 22.130808110000032],
+              [59.262175293000041, 22.131361344000027],
+              [59.26252048200007, 22.131565864000038],
+              [59.262587326000073, 22.131551935000061]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-35-047-01-472",
+        "landUse": "COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "El Mabelah South",
+        "plot_no": "292",
+        "block_no": "47 SE",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.128685231221155, 23.662811106171862],
+              [58.128597614296766, 23.662770378330553],
+              [58.128685950632907, 23.662609152367359],
+              [58.12872975826312, 23.662629425059144],
+              [58.12903888011877, 23.662064953058504],
+              [58.129017180617822, 23.662004327447661],
+              [58.12799296307184, 23.661528403974042],
+              [58.127440936443882, 23.662536379844816],
+              [58.128552678411758, 23.663052945902113],
+              [58.128685231221155, 23.662811106171862]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-05-063-01-157",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Qurm",
+        "plot_no": "247",
+        "block_no": "PHASE 1",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.429023332129532, 23.589765889580416],
+              [58.429117076990678, 23.589672368737546],
+              [58.429093875129574, 23.58924893532599],
+              [58.428977503401988, 23.589180286102131],
+              [58.428573203661507, 23.589199174417704],
+              [58.428591703287879, 23.589785932547617],
+              [58.429023332129532, 23.589765889580416]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-013-01-247",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Qurm",
+        "plot_no": "247",
+        "block_no": "PHASE 1",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.489559234514367, 23.622030701068653],
+              [58.488442975727033, 23.621986057446751],
+              [58.488416512571824, 23.622549733403968],
+              [58.488632001403282, 23.622546401404481],
+              [58.48865211702315, 23.622548466032544],
+              [58.489533829603829, 23.622583530085475],
+              [58.489559234514367, 23.622030701068653]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-04-010-02-2102",
+        "landUse": "TOURISM",
+        "governorat": "Muscat",
+        "wilayat": "Bawshar",
+        "city": "Al Khuwair",
+        "plot_no": "2102",
+        "block_no": "PHASE 2",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.420920138064865, 23.594607166416978],
+              [58.420916107711975, 23.594233054673445],
+              [58.419822230015804, 23.59424305960237],
+              [58.419820107643346, 23.594300786235959],
+              [58.420044234420978, 23.594621048486687],
+              [58.420920138064865, 23.594607166416978]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-02-014-02-344",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Mutrah",
+        "city": "M.B.D",
+        "plot_no": "344",
+        "block_no": "PHASE 2",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.553414412651783, 23.589753806043905],
+              [58.553249151037519, 23.589640590910548],
+              [58.55287980850148, 23.589387637310718],
+              [58.552593704545103, 23.589738262040697],
+              [58.552784352177852, 23.589868833565273],
+              [58.553128310506985, 23.590104522004427],
+              [58.553414412651783, 23.589753806043905]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-25-046-04-696",
+        "landUse": "GOVERNMENT",
+        "governorat": "Muscat",
+        "wilayat": "Mutrah",
+        "city": "Al Wadi Al Kabir",
+        "plot_no": null,
+        "block_no": "98 SW",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.562283989516757, 23.579021878908346],
+              [58.561933714355838, 23.578822931081049],
+              [58.561767503863763, 23.578728514037621],
+              [58.561277926784953, 23.579352033743998],
+              [58.56149700923546, 23.579476443820681],
+              [58.561847286575563, 23.579675392549891],
+              [58.562283989516757, 23.579021878908346]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01-05-021-01-299",
+        "landUse": "COMMERCIAL",
+        "governorat": "Muscat",
+        "wilayat": "Al Seeb",
+        "city": "Al Sharijah",
+        "plot_no": "299",
+        "block_no": "PHASE 1",
+        "coordsCode": "32639",
+        "organizati": "Muscat Municipality"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [58.173723689191021, 23.690012092159979],
+              [58.173681492328868, 23.689932303882049],
+              [58.173594753419344, 23.689971164035391],
+              [58.173636852179946, 23.690050953081499],
+              [58.173723689191021, 23.690012092159979]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

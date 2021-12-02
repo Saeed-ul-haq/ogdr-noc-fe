@@ -1,0 +1,26 @@
+# OSX
+#
+.DS_Store
+
+# Node.js
+#
+yarn.lock
+node_modules/
+npm-debug.log
+yarn-error.log
+
+
+# Compiled files
+#
+/dist
+
+# Editor directories and files
+#
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+

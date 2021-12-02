@@ -1,0 +1,309 @@
+#row-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+  .upload-input {
+    label {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .md-icon-text {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+
+  .ant-upload.ant-upload-drag {
+    height: 200px;
+    margin-top: 10px;
+    background: #fff;
+  }
+
+  .uploadImage {
+    .ant-upload-list.ant-upload-list-text {
+      display: none;
+    }
+
+    .uploadImage-header {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+
+      span.ant-upload {
+        color: #1979ff;
+        cursor: pointer;
+      }
+
+      .uploadImage-header-name {
+        max-width: calc(100% - 115px);
+        font-weight: normal;
+        font-size: 12px;
+        color: #565656;
+      }
+    }
+
+    .uploadImage-container {
+      max-height: 200px;
+      overflow: auto;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .uploadImage-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      border-top: 1px solid #ccc;
+      width: 100%;
+    }
+  }
+
+  .row-header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px dashed #ccc;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    .modes-containers {
+      display: flex;
+      padding-right: 10px;
+
+      .icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        background-color: #f8f8f8;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:hover {
+          background: #e2ecfb;
+        }
+
+        img {
+          width: 19px;
+        }
+      }
+    }
+  }
+
+  .views-section {
+    max-height: calc(100% - 100px);
+    height: calc(100% - 100px);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    overflow: auto;
+
+    .add-btn {
+      background: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      color: #1890ff;
+      font-weight: 400;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        background: rgba(59, 145, 247, 0.1);
+      }
+    }
+
+    .ant-table-small {
+      border: none;
+    }
+
+    .ant-table.ant-table-small thead > tr > th {
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+
+    .ant-table tbody > tr > td {
+      border: none;
+      border-bottom: 7px solid #f8f8f8;
+      text-align: center;
+    }
+
+    .coord-dropdown {
+      width: 100%;
+      margin: 8px 0;
+
+      .ant-select-selector {
+        border: none;
+        border-radius: 4px;
+      }
+
+      .ant-select-arrow {
+        color: #000;
+      }
+    }
+
+    .val-layers {
+      padding: 5px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .layers-dropdown {
+      max-height: 105px;
+      overflow: auto;
+      margin-top: 5px;
+    }
+
+    .row-collapse {
+      height: 100%;
+      background-color: transparent;
+
+      .ant-collapse-item-active {
+        .ant-collapse-header {
+          border-bottom: 1px dashed #ccc;
+        }
+      }
+
+      &.areas-details-collapse,
+      &.areas-results-collapse {
+        .ant-collapse-header {
+          padding-left: 0;
+          padding-right: 25px;
+
+          .area-extra-actions {
+            height: 21px;
+            padding-right: 6px;
+          }
+
+          .ant-collapse-arrow {
+            font-size: 14px !important;
+            color: #737373;
+            width: 1px !important;
+          }
+        }
+
+        .areas-details-panel,
+        .areas-results-panel {
+          .ant-collapse-content-box {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+
+        .result {
+          display: flex;
+          align-items: center;
+          color: #1ee11e;
+
+          .result-icon {
+            background: #ccfdc5;
+            border-radius: 50%;
+            margin: 0 5px;
+          }
+        }
+
+        .intersect-icon {
+          background: #fad7dd;
+          border-radius: 50%;
+          margin: 0 5px;
+        }
+      }
+
+      .row-collapse-panel {
+        margin-bottom: 8px;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        border: 0;
+
+        .ant-collapse-header {
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.65);
+
+          .ant-collapse-arrow {
+            font-size: 20px;
+            color: #737373;
+          }
+        }
+      }
+    }
+
+    .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+      width: 100%;
+    }
+
+    .ant-form-item {
+      margin-bottom: 5px;
+      display: flex;
+      vertical-align: top;
+      align-items: center;
+    }
+
+    .upload-area-main {
+      flex: 1;
+      display: flex;
+
+      .upload-input {
+        margin: auto;
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    .coords-table-main {
+      flex: 2;
+    }
+  }
+
+  .input-view-footer {
+    justify-content: flex-end;
+    border-top: 1px solid #ccc;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    background: #fff;
+
+    .footer-action-btn {
+      margin: 0 5px;
+      width: auto;
+    }
+  }
+}
+
+.results-options-popover {
+  display: flex;
+  flex-direction: column;
+
+  .ant-checkbox-wrapper {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "data": {
+    "WELLS": [
+      {
+        "uwi": "EJM-1",
+        "operatorName": "Texaco",
+        "profileType": "Vertical",
+        "td": 4003.0,
+        "tdOuom": "M",
+        "tvd": 4003.0,
+        "tvdOuom": "M",
+        "projectedCoordinateSystem": "EPSG:22332",
+        "surfaceX": 651395.49,
+        "surfaceY": 3893510.71
+      },
+      {
+        "uwi": "EJM-2",
+        "operatorName": "Texaco",
+        "profileType": "Vertical",
+        "td": "3710.0000",
+        "tdOuom": "M",
+        "tvd": "3710.0000",
+        "tvdOuom": "M",
+        "projectedCoordinateSystem": "EPSG:22332",
+        "surfaceX": 650697.8,
+        "surfaceY": 3892478.1
+      },
+      {
+        "uwi": "EJM-3",
+        "operatorName": "Thani",
+        "profileType": "Vertical",
+        "td": "3389.0000",
+        "tdOuom": "M",
+        "tvd": "3264.7900",
+        "tvdOuom": "M",
+        "projectedCoordinateSystem": "EPSG:22332",
+        "surfaceX": 650403.58,
+        "surfaceY": 3894061.98
+      },
+      {
+        "uwi": "EJM-4",
+        "operatorName": "Thani",
+        "profileType": "Deviated",
+        "td": "3500.0000",
+        "tdOuom": "M",
+        "tvd": "3429.4900",
+        "tvdOuom": "M",
+        "projectedCoordinateSystem": "EPSG:22332",
+        "surfaceX": 651286.44,
+        "surfaceY": 3893873.68
+      }
+    ]
+  }
+}

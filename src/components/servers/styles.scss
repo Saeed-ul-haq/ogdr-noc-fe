@@ -1,0 +1,79 @@
+.server-cards-container {
+  width: 100%;
+  overflow: auto;
+  height: calc(100% - 60px);
+  padding: 0 10px 10px 10px;
+
+  .servers {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 10px;
+
+    .icons-outer-container {
+      position: relative;
+      width: 98px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-overflow: ellipsis;
+      max-width: 100px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+
+      .card-outer-container {
+        position: relative;
+        width: 45px;
+        height: 55px;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #fff;
+
+        .card-image-container {
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          border-radius: 3px;
+        }
+      }
+
+      .card-label-container {
+        overflow: hidden;
+        font-size: 10px;
+        font-weight: 500;
+        color: #777;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: calc(100% - 10px);
+        width: 100%;
+        text-align: center;
+      }
+
+      .actions {
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        right: 5px;
+        visibility: hidden;
+      }
+    }
+
+    .icons-outer-container:hover {
+      .actions {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,26 @@
+.export-es {
+  .ant-page-header-heading-extra {
+    display: flex;
+    align-items: center;
+
+    .ant-select {
+      min-width: 250px;
+    }
+  }
+
+  .transfer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      flex: 1 1 0%;
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+}
