@@ -1,15 +1,33 @@
-// const env = 'demo-aws'
-const env = 'dev'
-const domain = 'was'
+const serverHostTranslation = 'i18n'
+
+// const serverHost = 'was'
+// const serverEnv = 'test'
+// const serverName = 'petrops'
+// const ext = 'tpao.gov.tr'
+
+const serverHost = 'was'
+const serverEnv = 'dev'
+const serverName = 'meeraspace'
+const ext = 'com'
+
 const proxyConfig = {
   '/static-data': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/studiomanager': {
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/geoserver': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
@@ -21,83 +39,129 @@ const proxyConfig = {
     changeOrigin: true,
   },
   '/trove/api': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/wfs/api/v1/layers': {
-    target: 'https://map.target.meeraspace.com',
+    target: 'https://map.target.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
-  '/audit/api/v1': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com:8091',
+  '/audit': {
+    target: 'https://was.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/api': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
-  '/osrm/route/v1/driving': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
-    ssl: {},
-    secure: false,
-    changeOrigin: true,
-  },
+  // '/rest': {
+  //   target: 'https://was.' + serverEnv + '.'+serverName+'.com:9095',
+  //   ssl: {},
+  //   secure: false,
+  //   changeOrigin: true,
+  // },
   '/rest': {
-    target: 'https://' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/rest/translations': {
+    target:
+      'https://' +
+      serverHostTranslation +
+      '.' +
+      serverEnv +
+      '.' +
+      serverName +
+      '.' +
+      ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/data': {
+    target: 'http://ldr-trove.digitalenergycloud.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/service': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/catalogmanager': {
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/spatial': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/export': {
+    target: 'https://was.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/spatial/api/v1/wfs/readjson': {
-    target: 'https://' + domain + '.' + env + '.meeraspace.com',
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/spatial/api/v1/crs': {
-    target: 'http://ldr-map.digitalenergycloud.com',
+    target: 'http://ldr-map.digitalenergycloud.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
   '/fm': {
-    target: 'https://api.' + env + '.meeraspace.com',
+    target: 'https://api.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
-  '/wf-be': {
-    target: 'https://api.' + env + '.meeraspace.com',
+  '/grpc-web': {
+    target: 'https://api.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
-  // '/meerafs/rest/files/': {
-  //   target: `https://api.' + env + '.meeraspace.com`,
-  //   ssl: {},
-  //   secure: false,
-  //   changeOrigin: true,
-  // },
+  '/app/api': {
+    target:
+      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
+  '/edge/api/v1/': {
+    target: 'https://wasl.' + serverEnv + '.' + serverName + '.' + ext,
+    ssl: {},
+    secure: false,
+    changeOrigin: true,
+  },
 }
 
 module.exports = proxyConfig

@@ -1,0 +1,37 @@
+.text-area-input-tag {
+  align-items: unset !important;
+
+  .md-text-field-multiline-container {
+    width: 100%;
+
+    .md-text-field--multiline-mask {
+      display: none;
+    }
+
+    .md-text-field.md-text-field--multiline {
+      width: 100%;
+    }
+  }
+
+  &.error-tag > div {
+    border-color: #f00 !important;
+  }
+}
+
+.wkt-input--field {
+  height: 55px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+.input-tag {
+  .md-text-field-container--multiline {
+    .md-text-field-multiline-container {
+      margin-top: 5px;
+    }
+  }
+
+  &.error-tag > div {
+    border-color: #f00 !important;
+  }
+}

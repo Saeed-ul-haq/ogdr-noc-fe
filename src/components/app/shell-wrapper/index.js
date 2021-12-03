@@ -1,25 +1,24 @@
 /* eslint-disable no-undef */
-import React, { Component, Fragment } from 'react'
-import { Switch, Route, withRouter } from 'react-router-dom'
-import PropTypes from 'prop-types'
-import i18n from 'i18n-js'
 import { AppShellSide, ShellProvider } from '@target-energysolutions/app-shell'
-import { SVGIcon } from 'react-md'
+import '@target-energysolutions/gis-map/styles.css'
 import withOAuth, {
   cleanUp,
-  OauthHelper,
+  OauthHelper
 } from '@target-energysolutions/hoc-oauth'
-
+import GIS from 'components/home'
 import SSOLoginSplash from 'components/ui-kit/login-splash'
-
+import i18n from 'i18n-js'
 import { changeLang } from 'libs/langs'
 import l from 'libs/langs/keys'
-import { getAccessToken } from 'libs/utils/helpers'
 import oauthConfig from 'libs/oauth'
+import { getAccessToken } from 'libs/utils/helpers'
 import { validURL } from 'libs/utils/validURL'
-import '@target-energysolutions/gis-map/styles.css'
+import PropTypes from 'prop-types'
+import React, { Component, Fragment } from 'react'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import './style.scss'
-import GIS from 'components/home'
+
+
 @withRouter
 @withOAuth(oauthConfig, {
   isDev: process.env.NODE_ENV !== 'production',
@@ -144,40 +143,12 @@ class App extends Component {
                 disabled: true,
               },
             ]}
-            // actionMenus={[
-            //   {
-            //     primaryText: i18n.t(l.signout),
-            //     onClick: this.signOut,
-            //   },
-            // ]}
             actionMenus={[
               {
                 key: 'signout',
                 primaryText: 'Sign Out',
                 primaryTextStyle: { color: '#f44336' },
                 onClick: this.signOut,
-              },
-              {
-                key: 'profile',
-                primaryText: 'My Profile',
-                // primaryTextStyle: { color: '#f44336' },
-                // onClick: this.signOut
-              },
-              {
-                key: 'update-password',
-                weight: 4,
-                primaryText: 'Update My Password',
-                // onClick: openUpdatePwdDialog
-              },
-              {
-                key: 'home',
-                weight: 3,
-                primaryText: 'Home Page',
-              },
-              {
-                key: 'select-language',
-                weight: 2,
-                primaryText: 'Select Language',
               },
             ]}
             title="OGDR NOC"
@@ -237,7 +208,6 @@ class App extends Component {
                 />
               </Switch>
             }
-            
           />
         </ShellProvider>
       </Fragment>

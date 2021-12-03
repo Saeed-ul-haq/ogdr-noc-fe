@@ -1,0 +1,27 @@
+.select-tag {
+  .md-text-field-container--multiline {
+    .md-text-field-multiline-container {
+      margin-top: 5px;
+    }
+  }
+
+  &.error-tag > div {
+    border-color: #f00;
+  }
+
+  .md-menu--select-field {
+    .md-list--menu-contained {
+      width: auto;
+    }
+  }
+
+  .md-btn {
+    background: #fff !important;
+    border: 1px solid #ddd;
+    height: 44px !important;
+
+    .data-pool-name-cont {
+      color: inherit !important;
+    }
+  }
+}
