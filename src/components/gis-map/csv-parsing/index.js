@@ -1,19 +1,16 @@
-import Autocomplete from '@mui/material/Autocomplete'
-import TextField from '@mui/material/TextField'
+import '@target-energysolutions/data-table/styles.css'
 import '@target-energysolutions/gis-map/styles.css'
-import { Modal, Table } from 'antd'
-import isEmpty from 'lodash/isEmpty'
-import map from 'lodash/map'
+// import Table from '@target-energysolutions/react-table-wrapper'
+import { Modal } from 'antd'
 import SearchSRS from 'components/common/forms-container/search-srs'
-import i18n from 'i18n-js'
-import l from 'libs/langs/keys'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { SVGIcon } from 'react-md'
 import { CSVReader } from 'react-papaparse'
 import './styles.scss'
-import set from 'lodash.set'
-import Spinner from 'components/ui-kit/loader'
+import { Table } from 'antd';
 
-const CSVParseData = () => {
+
+const CSVParseData = ({ username, organizationName, ...rest }) => {
   const inputRef = useRef(null)
   const [isLoading, setisLoading] = useState(false)
   const [csvData, setCsvData] = useState([])
@@ -24,22 +21,23 @@ const CSVParseData = () => {
   const [isModalVisible, setIsModalVisible] = useState(false)
   const [transformMethod, setTransformMethod] = useState(false)
   const [tMethods, settMethods] = useState([])
+  const [selectedRows, setselectedRows] = useState([])
 
   const columns = [
     {
       title: 'S.No',
-      dataIndex: '0',
-      key: 0,
+      dataIndex: 'SNo',
+      key: 'SNo',
     },
     {
-      title: 'X',
-      dataIndex: 'X1',
-      key: 'X1',
+      title: 'Lat / Y',
+      dataIndex: 'Lat',
+      key: 'Lat',
     },
     {
-      title: 'Y',
-      dataIndex: 'X2',
-      key: 'X2',
+      title: 'Lon / X',
+      dataIndex: 'Lon',
+      key: 'Lon',
     },
   ]
 
@@ -84,15 +82,19 @@ const CSVParseData = () => {
     setIsModalVisible(false)
   }
 
-  const handleOnFileLoad = data => {
+  const handleOnFileLoad = async data => {
     setisLoading(true)
-    console.log(data)
-    const csvfileData = data.map(({ data }) => {
-      const input = data.reduce((a, v, i) => ({ ...a, [`X${i}`]: v }))
-      return input
+    debugger
+    const csvfileData = data.slice(1).map(({ data }) => {
+      // const input = data.reduce((a, v, i) => ({ ...a, SNo: i, [`X${i}`]: v }))
+      return {
+        SNo: data[0],
+        Lat: data[1],
+        Lon: data[2],
+      }
     })
-    console.log(csvfileData)
-    setCsvData(csvfileData.slice(1))
+   await setCsvData(csvfileData)
+    debugger
     setisLoading(false)
     showModal()
   }
@@ -100,13 +102,45 @@ const CSVParseData = () => {
     inputRef.current.open(e)
   }
 
+  const renderViewActions = () => {
+    let actions = []
+    actions.push(
+      {
+        text: `Delete`,
+        icon: (
+          <SVGIcon>
+            <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+          </SVGIcon>
+        ),
+        onClick: selectedRow => {
+          // this.setState({ data: {} }, () => {
+          //   const { onDeleteDataType } = this.props
+          //   onDeleteDataType && onDeleteDataType(selectedRow)
+          // })
+        },
+      },
+      {
+        text: `Edit`,
+        icon: (
+          <SVGIcon>
+            <path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+          </SVGIcon>
+        ),
+        onClick: selectedRow => {
+          // this.setState({ data: selectedRow })
+        },
+      },
+    )
+    return actions
+  }
+
   useEffect(() => {
     onPostTransformMethodAPICall()
   }, [source, showSourceErr])
-
-  if (isLoading) {
-    return <Spinner text="CSV Loading" />
-  }
+  // useEffect(() => {
+  //   showModal()
+  // }, [csvData])
+  
   return (
     <div className="primarybar">
       <CSVReader ref={inputRef} onFileLoad={handleOnFileLoad} noClick noDrag>
@@ -128,48 +162,52 @@ const CSVParseData = () => {
           </aside>
         )}
       </CSVReader>
-      {isModalVisible && (
-        <Modal
-          title="Coodinates"
-          visible={isModalVisible}
-          onOk={handleOk}
-          onCancel={handleOk}
-        >
-          <Autocomplete
-            freeSolo
-            disabled={isEmpty(csvData)}
-            style={{ width: 230 }}
-            options={[
-              ...map(csvData, item => ({ label: item.X1, lon: item.X2 })),
-            ]}
-            size={`small`}
-            renderInput={params => (
-              <TextField
-                freeSolo
-                {...params}
-                label="Source Crs"
-                placeholder="Source Crs"
-              />
-            )}
-          />
-          <SearchSRS
-            label={`source crs`}
-            error={showSourceErr}
-            onTransformAutocomplete={selectedSRS => {
-              setSource(selectedSRS)
+      <Modal
+        title="Coodinates"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleOk}
+      >
+        <SearchSRS
+          label={`source crs`}
+          error={showSourceErr}
+          onTransformAutocomplete={selectedSRS => {
+            setSource(selectedSRS)
+            setShowSourceErr(false)
+          }}
+          onTransformationChange={value => {
+            if (value === '') {
+              setSource(null)
               setShowSourceErr(false)
-            }}
-            onTransformationChange={value => {
-              if (value === '') {
-                setSource(null)
-                setShowSourceErr(false)
-                setTransformation(null)
-              }
-            }}
-          />
-          <Table columns={columns} dataSource={csvData} />
-        </Modal>
-      )}
+              setTransformation(null)
+            }
+          }}
+        />
+      {/* {csvData.length > 0 &&  <Table
+          columnsConfig={columns}
+          data={csvData}
+          autoFillEmptyRows={false}
+          rowsPerPage={10}
+          actions={renderViewActions() || []}
+          onRowSelectionChange={row => {
+            if (row && row[0]) {
+              const { data, index } = row[0]
+              // this.getDetails(data)
+              const selectedRow = []
+              selectedRow.push(index)
+              setselectedRows(selectedRow)
+            } else {
+              // this.setState({ details: '' })
+            }
+          }}
+        />} */}
+        <Table columns={columns} dataSource={csvData} />
+      </Modal>
+
+      <p>
+        <b>{username} </b>{' '}
+        <span style={{ marginLeft: '8px' }}>{organizationName}</span>
+      </p>
     </div>
   )
 }

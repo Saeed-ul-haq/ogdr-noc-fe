@@ -1,5 +1,6 @@
 import { getAccessToken } from 'libs/utils/helpers'
 import { fetchJSON, fetchGeneric } from 'libs/fetch'
+export const geoServerProtocol = `/spatial/`
 
 export async function findSRS({ apiURL, search, type }) {
   const resquestBody = {

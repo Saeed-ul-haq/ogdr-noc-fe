@@ -209,4 +209,29 @@ main.mapLayers {
     height: 35px;
   }
 }
+.meera_map {
+  height: calc(100vh - 53px) !important;
+  width: 100%;
+  position: absolute;
+}
 
+.meera_map_footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 52;
+  left: 0;
+  right: 0;
+  min-height: 16px;
+  background-color: rgba(4,15,27,.7);
+  font-size: 11px;
+  color: hsla(0,0%,100%,.7);
+  font: 10px/1.5 Helvetica Neue,Arial,Helvetica,sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px 0 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+}

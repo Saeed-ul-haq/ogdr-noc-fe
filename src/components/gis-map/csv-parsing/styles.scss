@@ -4,15 +4,19 @@
 .primarybar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 52px;
   background: #fff;
+  padding: 0px 20px;
   border-radius: 2px;
   /* stylelint-disable */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1),
     0 2px 1px -2px rgba(0, 0, 0, 0.1);
-
+p {
+  margin-bottom: 0px;
+  text-align: right;
+}
   div {
     aside {
       margin-bottom: 0px !important;
@@ -38,8 +42,8 @@
     outline: none;
   }
   .custom-bordered-input-configurator-container .md-text-field-container {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
     padding: 0 10px;
     margin-bottom: 15px;
     width: 100%;
@@ -52,6 +56,26 @@
     height: 45px;
   }
 }
+.form-fields {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.md-divider {
+  display: none;
+}
+.md-text-field--floating-margin {
+  margin-top: 0px;
+}
+.form-fields {
+  .input-tag {
+    border: 1px solid #dddddd;
+    flex: 0.7;
+    border-radius: 4px;
+  }
+}
 input::placeholder,
 .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
   font-size: 14px;
@@ -62,4 +86,7 @@ input::placeholder,
 }
 .MuiIconButton-root {
   padding: 5px;
+}
+.ant-modal {
+  width: 51vw !important;
 }

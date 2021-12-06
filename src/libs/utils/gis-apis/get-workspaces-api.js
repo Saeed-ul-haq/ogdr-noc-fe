@@ -21,3 +21,21 @@ export async function getWorkSpaces(orgID) {
     true,
   )
 }
+
+export const getOrganizations = () => {
+  return fetchJSON(
+    `${PRODUCT_APP_URL_WORKSPACE}/graphql`,
+    {
+      body: JSON.stringify({
+        query: `{
+          meOrganizations {
+            ID
+            Name
+          }
+        }`
+      }),
+      method: 'POST'
+    },
+    true
+  )
+}

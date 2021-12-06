@@ -75,7 +75,7 @@ class SearchSRS extends Component {
             onChange={value => {
               console.log(value,'search')
               this.setState({ SRSSearched: value })
-              this.getCRSQuery(value)
+              this.getCRSQueryDebounced(value)
               onTransformationChange && onTransformationChange(value)
             }}
             onAutocomplete={(value, index, matches) => {
