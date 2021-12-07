@@ -2,40 +2,24 @@ import Search from 'components/search'
 import Spinner from 'components/ui-kit/loader'
 import PropTypes from 'prop-types'
 import React, { Suspense, lazy } from 'react'
+import AddNoc from 'components/add-noc'
 import { Route, Switch, useHistory } from 'react-router-dom'
 import './styles.scss'
 
-const Maps = lazy(() => import('components/gis-map'))
+const NOC = lazy(() => import('components/noc'))
 
-const GISHome = () => {
+const OgdrNocHome = () => {
   const history = useHistory()
   const { location } = history
   const { pathname } = location
   return (
-    <div
-      className="main-container"
-      style={pathname.includes('/explore') ? { maxHeight: 'calc(100%)' } : {}}
-    >
+    <div className="main-container">
       <Suspense fallback={<Spinner text={`Loading Map`} />}>
         <Route>
           <Switch>
-            <Route
-              path="/explore/:q"
-              exact
-              render={renderProps => {
-                const { history, match } = renderProps
-                const { params } = match
-                const { q = '' } = params
-                return (
-                  <Search
-                    hideToolBar={true}
-                    defaultSearch={decodeURIComponent(q)}
-                    history={history}
-                  />
-                )
-              }}
-            />
-            <Route path={'/'} exact component={Maps} />
+            <Route path="/add-noc" exact component={AddNoc} />
+
+            <Route path={'/'} exact component={NOC} />
           </Switch>
         </Route>
       </Suspense>
@@ -43,9 +27,9 @@ const GISHome = () => {
   )
 }
 
-GISHome.propTypes = {
+OgdrNocHome.propTypes = {
   match: PropTypes.object,
   showToast: PropTypes.func,
 }
 
-export default GISHome
+export default OgdrNocHome

@@ -118,50 +118,26 @@ const proxyConfig = {
     secure: false,
     changeOrigin: true,
   },
-  '/export': {
-    target: 'https://was.' + serverEnv + '.' + serverName + '.' + ext,
-    ssl: {},
-    secure: false,
-    changeOrigin: true,
-  },
   '/spatial/api/v1/wfs/readjson': {
     target:
       'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
-  },
+},
   '/spatial/api/v1/crs': {
     target: 'http://ldr-map.digitalenergycloud.' + ext,
     ssl: {},
     secure: false,
     changeOrigin: true,
   },
-  '/fm': {
-    target: 'https://api.' + serverEnv + '.' + serverName + '.' + ext,
+ 
+  '/print/api': {
+    target: 'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
     ssl: {},
     secure: false,
-    changeOrigin: true,
-  },
-  '/grpc-web': {
-    target: 'https://api.' + serverEnv + '.' + serverName + '.' + ext,
-    ssl: {},
-    secure: false,
-    changeOrigin: true,
-  },
-  '/app/api': {
-    target:
-      'https://' + serverHost + '.' + serverEnv + '.' + serverName + '.' + ext,
-    ssl: {},
-    secure: false,
-    changeOrigin: true,
-  },
-  '/edge/api/v1/': {
-    target: 'https://wasl.' + serverEnv + '.' + serverName + '.' + ext,
-    ssl: {},
-    secure: false,
-    changeOrigin: true,
-  },
+    changeOrigin: true
+  }
 }
 
 module.exports = proxyConfig

@@ -5,7 +5,7 @@ import withOAuth, {
   cleanUp,
   OauthHelper,
 } from '@target-energysolutions/hoc-oauth'
-import GIS from 'components/home'
+import OGDRHome from 'components/home'
 import { SVGIcon } from 'react-md'
 
 import SSOLoginSplash from 'components/ui-kit/login-splash'
@@ -262,7 +262,7 @@ class App extends Component {
                 />
                 <Route
                   path="/*"
-                  render={props => <GIS showToast={showToast} {...props} />}
+                  render={props => <OGDRHome showToast={showToast} {...props} />}
                 />
               </Switch>
             }

@@ -1,4 +1,4 @@
-import { fetchJSON } from 'libs/fetch'
+import { fetchJSON ,config} from 'libs/fetch'
 
 export async function getWorkSpaces(orgID) {
   return fetchJSON(
@@ -33,6 +33,33 @@ export const getOrganizations = () => {
             Name
           }
         }`
+      }),
+      method: 'POST'
+    },
+    true
+  )
+}
+
+export async function currentLoggedInUser() {
+  let userAPI = config.userAPI || PRODUCT_APP_URL_PROFILE
+  return fetchJSON(
+    `${userAPI}/graphql`,
+    {
+      body: JSON.stringify({
+        query: ` {
+          me {
+            userProfile {
+              userID
+              photo {
+                aPIID
+              }
+              title
+              fullName
+              subject
+              email
+            }
+          }
+        } `
       }),
       method: 'POST'
     },

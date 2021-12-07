@@ -4,6 +4,8 @@ import axios from 'axios'
 import { OauthHelper } from '@target-energysolutions/hoc-oauth'
 import getAuthToken from 'libs/utils/get-auth-token'
 
+export let config = {}
+
 export function fetchGeneric (url, opts, auth = true) {
   const accessToken = getAccessToken()
   return fetch(url, {

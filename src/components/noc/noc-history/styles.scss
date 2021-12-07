@@ -1,0 +1,17 @@
+.noc-history-container {
+  margin: auto;
+  padding: 10px;
+  max-width: 95vw;
+  max-height: calc(100vh - 90px);
+  overflow-y: scroll;
+
+  h4 {
+      position: sticky;
+  }
+  .ant-table-wrapper {
+    clear: both;
+    max-width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
