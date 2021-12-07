@@ -72,7 +72,7 @@ class App extends React.Component {
   render() {
     const { toasts, dismissToast, addToast } = this.props
     return (
-      <main className="gis-fe-main">
+      <main className="ogdr-noc-main">
         {this.renderLoader('app')}
         <Suspense fallback={<Spinner text={`${i18n.t(l.loading_app)}`} />}>
           <Switch>

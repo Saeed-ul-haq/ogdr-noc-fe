@@ -205,7 +205,7 @@ const CSVParseData = ({ username, organizationName, ...rest }) => {
       </Modal>
 
       <p>
-        <b>{username} </b>{' '}
+        <b>{username} </b>
         <span style={{ marginLeft: '8px' }}>{organizationName}</span>
       </p>
     </div>

@@ -7,8 +7,8 @@ import Root from 'components/root'
 
 import 'styles/index.scss'
 import 'normalize.css'
-const cs = require('cesium')
-window.Cesium = cs
+// const cs = require('cesium')
+// window.Cesium = cs
 
 document.dir = localStorage.language === 'ar' ? 'rtl' : 'ltr'
 
