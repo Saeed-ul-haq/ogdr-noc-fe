@@ -1,7 +1,7 @@
 .noc-history-container {
   margin: auto;
   max-width: 95vw;
-  max-height: calc(100vh - 90px);
+  max-height: calc(100vh - 124px);
   overflow-y: scroll;
 
   h3 {
@@ -19,10 +19,17 @@
   }
 }
 
-.ant-table-body {
+.noc-history-table {
   tr {
     td {
       vertical-align: middle !important;
+    }
+  }
+  .file-icon {
+    a {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
     }
   }
 }

@@ -7,11 +7,15 @@ import uploadFile from 'libs/utils/gis-apis/file-upload-api'
 import { createNocRequest } from 'libs/utils/noc-apis/noc-list'
 import { map } from 'lodash'
 import UploadProgressDialog from 'components/ui-kit/upload-dialog'
+import axios from 'axios'
+import { getAccessToken } from 'libs/utils/helpers'
 
 const Index = () => {
   const [uploadedList, setUploadedList] = useState([])
   const [showProgress, setshowProgress] = useState(false)
   const [uploadProgress, setuploadProgress] = useState(0)
+  const [loaded, setloaded] = useState(0)
+  const [total, settotal] = useState(0)
   const getOrganizationName = () => {
     return localStorage.getItem('organizationName')
   }
@@ -72,15 +76,49 @@ const Index = () => {
 
   const onUploadFile = async ({ file }) => {
     setshowProgress(true)
-    message.loading({ content: 'Uploadeding File...', key: 'upload' })
-    setUploadedList(file)
-    try {
-      const response = await uploadFile(file)
-      const { files = [] } = response
+    // message.loading({ content: 'Uploadeding File...', key: 'upload' })
+    // setUploadedList(file)
+    // try {
+    //   const response = await uploadFile(file)
+    //   const { files = [] } = response
       // await storeFileUrl(files)
-    } catch (err) {
-      message.error({ content: `${err.message}`, key: 'upload' })
+    // } catch (err) {
+    //   message.error({ content: `${err.message}`, key: 'upload' })
+    // }
+    const accessToken = getAccessToken()
+
+    const config = {
+      onUploadProgress: function(progressEvent) {
+        settotal(progressEvent.total);
+        setloaded(progressEvent.loaded);
+        var percentCompleted = Math.round(
+          (progressEvent.loaded * 100) / progressEvent.total,
+        )
+        debugger;
+        setuploadProgress(percentCompleted)
+      },
     }
+    const uploadURL = `https://api.dev.meeraspace.com/fm/upload?bucket=gisfe&share_with=sys:anonymous,sys:authenticated&meta={"fm":{"group":"target-qais-file-group","source":"energy"}}`
+    const form = new FormData()
+    form.append('file', file)
+    axios({
+      method: 'POST',
+      url: uploadURL,
+      data: form,
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        mode: 'no-cors',
+        'Content-Type': 'multipart/form-data',
+      },
+      ...config,
+    })
+      .then( async (res) => {
+        console.log(res)
+        await storeFileUrl(res.data.files)
+      })
+      .catch(err => {
+        debugger
+      })
   }
   return (
     <div className="add-noc-container">
@@ -95,16 +133,17 @@ const Index = () => {
           '.csv',
           '.gpx',
           '.dxf',
+          '.pdf',
         ]}
         // defaultFileList={uploadedList}
         {...props}
-        multiple={true}
+        multiple={false}
         customRequest={onUploadFile}
-        
+        showUploadList={false}
         // onChange={onUploadChange}
         // showUploadList={{
         //   showPreviewIcon: false,
-         
+
         //   showProgress: false,
         //   showDownloadIcon: false,
         //   showUploadList: false,
@@ -123,6 +162,8 @@ const Index = () => {
           percent={uploadProgress}
           closeUploadDialog={() => setshowProgress(false)}
           uploadedList={uploadedList}
+          total={total}
+          loaded={loaded}
         />
       )}
     </div>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <title>file_zip</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="图层_1" data-name="图层 1">
+      <g>
+        <g>
+          <path d="M27.7,2.5H20.3V4.8H18V7.2h2.3V9.5H18v2.3h2.3v2.4H18v2.3h2.3v2.3H18v2.4h2.3v2.3H18v2.3h2.3V34a3.5,3.5,0,0,1-7,0V25.8h2.3V23.5H13.3V21.2h2.3V18.8H13.3V16.5h2.3V14.2H13.3V11.8h2.3V9.5H13.3V7.2h2.3V4.8H13.3V2.5H10.9A4.2,4.2,0,0,0,6.7,6.7V40.3a4.2,4.2,0,0,0,4.2,4.2H36.1a4.2,4.2,0,0,0,4.2-4.2V15.1ZM25.6,17.2V5.7L37.2,17.2Z" fill="#1565c0"/>
+          <g>
+            <rect x="15.6" y="30.6" width="2.4" height="4.59" fill="#1565c0"/>
+            <rect x="15.6" y="11.8" width="2.3" height="2.33" fill="#1565c0"/>
+            <rect x="15.6" y="16.5" width="2.3" height="2.33" fill="#1565c0"/>
+            <rect x="15.6" y="2.5" width="2.3" height="2.33" fill="#1565c0"/>
+            <rect x="15.6" y="21.2" width="2.3" height="2.33" fill="#1565c0"/>
+            <rect x="15.6" y="7.2" width="2.3" height="2.33" fill="#1565c0"/>
+          </g>
+        </g>
+        <rect width="47" height="47" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { Table, Button } from 'antd'
+import { getFileIcon } from 'libs/utils'
 import './styles.scss'
 import getNocLists from 'libs/utils/noc-apis/noc-list'
+import download from 'images/svg/download.svg'
 export default function NocHistory() {
   const [listData, setlistData] = useState([])
   const [scroll, setScroll] = useState(false)
+  const getIcon = url => {
+    const ext = url.split('.').pop()
+    return getFileIcon(ext)
+  }
+
   const columns = [
     {
       title: 'CreatedBy',
@@ -46,10 +53,13 @@ export default function NocHistory() {
       title: 'File',
       dataIndex: 'url',
       key: 'url',
-      render: text => (
-        <Button type="primary" size={`small`}>
-          <a href={text}>Download</a>
-        </Button>
+      render: (url) => (
+        <div className='file-icon'> 
+          <img width="47px" height="47px" src={getIcon(url)} />
+          <a href={url}>
+            <img src={download} />
+          </a>
+        </div>
       ),
     },
     {
@@ -70,6 +80,7 @@ export default function NocHistory() {
     <div className="noc-history-container" id="top">
       <h3>History</h3>
       <Table
+        className="noc-history-table"
         columns={columns}
         dataSource={listData}
         pagination={{

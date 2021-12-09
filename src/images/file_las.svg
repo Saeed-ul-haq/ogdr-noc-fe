@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <title>file_las</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="图层_1" data-name="图层 1">
+      <g>
+        <g>
+          <path d="M30.1.2H7A2.3,2.3,0,0,0,4.7,2.5v42A2.3,2.3,0,0,0,7,46.8H40a2.3,2.3,0,0,0,2.3-2.3V12.3Z" fill="#3faf8d"/>
+          <path d="M30.1,10a2.3,2.3,0,0,0,2.3,2.3h9.9L30.1.2Z" opacity="0.2"/>
+          <text transform="translate(11.5 39)" font-size="13.15" fill="#fff" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan letter-spacing="0.01em">L</tspan><tspan x="7.4" y="0">AS</tspan></text>
+        </g>
+        <rect width="47" height="47" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

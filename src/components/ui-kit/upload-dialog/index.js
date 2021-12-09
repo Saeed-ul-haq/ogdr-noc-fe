@@ -3,9 +3,15 @@ import { ExpansionList, ExpansionPanel, SVGIcon, FontIcon } from 'react-md'
 import { getFileSize } from 'libs/utils/helpers'
 import PropTypes from 'prop-types'
 import './styles.scss'
+import { Progress } from 'antd'
 
 const UploadProgressDialog = props => {
-  const { percent = 0, closeUploadDialog, uploadedList = {size: 34, name: 'testing'} } = props
+  const {
+    percent = 0,
+    closeUploadDialog,
+    loaded,total,
+    uploadedList = { size: 34, name: 'testing' },
+  } = props
   return (
     <div className="upload-progress-container">
       <ExpansionList>
@@ -29,7 +35,7 @@ const UploadProgressDialog = props => {
           footer={null}
         >
           {/* {uploadedList.map((m, index) => ( */}
-          <div  className="single-upload-info-item">
+          {/* <div  className="single-upload-info-item">
             <div className="icon-container">
               <SVGIcon size={30}>
                 <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M11.2,18.46L15.95,13.71L14.78,12.3L11.2,15.88L9.61,14.3L8.45,15.46L11.2,18.46Z" />
@@ -50,8 +56,10 @@ const UploadProgressDialog = props => {
                 </div>
               </div>
             </div>
-          </div>
-          {/* ))} */}
+          </div> */}
+          <p><small>{getFileSize(loaded)} of {getFileSize(total)}</small></p>
+          <Progress percent={percent} />
+          
         </ExpansionPanel>
       </ExpansionList>
     </div>

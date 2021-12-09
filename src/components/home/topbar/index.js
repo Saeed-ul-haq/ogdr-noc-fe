@@ -9,7 +9,7 @@ export default function index() {
       <div className="left-navbar">
         <Breadcrumb>
           <Breadcrumb.Item>
-            <Link to="/">OGDR NOC</Link>
+            <Link to="/"><b>OGDR NOC</b></Link>
           </Breadcrumb.Item>
          
          

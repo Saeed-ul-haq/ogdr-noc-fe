@@ -21,7 +21,7 @@ export default async files => {
   }
 
   return fetchJSON(uploadURL, opts)
-}
+} 
 
 export const uploadTusClient = ({
   file,
