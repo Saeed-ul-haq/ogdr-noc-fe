@@ -21,7 +21,7 @@ class SearchSRS extends Component {
    *  Get Query
    */
   getCRSQuery = async search => {
-    debugger;
+    
     this.setState({ isFetching: true })
     findSRS({
       apiURL: 'api/v1/transform/find',

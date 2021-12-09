@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react'
-import Toolbar from 'components/toolbar'
 import { SVGIcon } from 'react-md'
 import { message, Empty } from 'antd'
 import MapCard from 'components/map-card'
@@ -131,7 +130,6 @@ const Maps = props => {
   }, [])
   return (
     <>
-      <Toolbar {...props} rightActions={toolbarRightActions} />
       <div className="maps">
         {mapDetailsVisible && (
           <DetailsBar

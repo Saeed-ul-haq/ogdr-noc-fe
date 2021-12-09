@@ -1,8 +1,8 @@
-import Search from 'components/search'
 import Spinner from 'components/ui-kit/loader'
 import PropTypes from 'prop-types'
 import React, { Suspense, lazy } from 'react'
 import AddNoc from 'components/add-noc'
+import Topbar from './topbar'
 import { Route, Switch, useHistory } from 'react-router-dom'
 import './styles.scss'
 
@@ -14,6 +14,7 @@ const OgdrNocHome = () => {
   const { pathname } = location
   return (
     <div className="main-container">
+      <Topbar />
       <Suspense fallback={<Spinner text={`Loading Map`} />}>
         <Route>
           <Switch>

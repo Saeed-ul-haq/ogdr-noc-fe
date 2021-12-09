@@ -42,7 +42,7 @@ class App extends Component {
     history.push(`/${value}`)
   }
   handleNotificationItemClick = item => {
-    debugger;
+    
     const { data: itemData } = item
     let { action, url, moduleName } = itemData || {}
     if (moduleName === 'meeting' && action === 'popup') {

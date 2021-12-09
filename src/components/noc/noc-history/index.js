@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Table } from 'antd'
+import { Table, Button } from 'antd'
 import './styles.scss'
 import getNocLists from 'libs/utils/noc-apis/noc-list'
 export default function NocHistory() {
@@ -11,11 +11,7 @@ export default function NocHistory() {
       dataIndex: 'createdBy',
       key: 'createdBy',
     },
-    {
-      title: 'assignedTo',
-      dataIndex: 'assignedTo',
-      key: 'assignedTo',
-    },
+
     {
       title: 'Subject',
       dataIndex: 'subject',
@@ -32,16 +28,6 @@ export default function NocHistory() {
       key: 'description',
     },
     {
-      title: 'Url',
-      dataIndex: 'url',
-      key: 'url',
-    },
-    {
-      title: 'Status',
-      dataIndex: 'status',
-      key: 'status',
-    },
-    {
       title: 'pdfUrl',
       dataIndex: 'pdfUrl',
       key: 'pdfUrl',
@@ -51,23 +37,47 @@ export default function NocHistory() {
       dataIndex: 'createdAt',
       key: 'createdAt',
     },
+    {
+      title: 'Status',
+      dataIndex: 'status',
+      key: 'status',
+    },
+    {
+      title: 'File',
+      dataIndex: 'url',
+      key: 'url',
+      render: text => (
+        <Button type="primary" size={`small`}>
+          <a href={text}>Download</a>
+        </Button>
+      ),
+    },
+    {
+      title: 'assignedTo',
+      dataIndex: 'assignedTo',
+      key: 'assignedTo',
+    },
   ]
 
   useEffect(async () => {
     const subject =
       'CiQ2ZDFmNmZkZS03OTY1LTQ0NWUtYmJmNy1iNThiZTBkOTk1NWUSBWxvY2Fs'
-    const response = await getNocLists(
-      `CiRiM2NjYzNlYS0yMzBlLTRhNTUtODlhZC05Zjg0ZTRhNWQxNzgSBWxvY2Fs`,
-    )
-    const data = await response.json()
-    console.log(data)
-    setlistData(data)
+    const response = await getNocLists(subject)
+    setlistData(response)
   }, [])
 
   return (
     <div className="noc-history-container" id="top">
-      <h4>History</h4>
-      <Table columns={columns} dataSource={listData} />
+      <h3>History</h3>
+      <Table
+        columns={columns}
+        dataSource={listData}
+        pagination={{
+          defaultPageSize: 6,
+          showSizeChanger: true,
+          pageSizeOptions: ['6', '12', '18'],
+        }}
+      />
     </div>
   )
 }

@@ -20,14 +20,14 @@ export function fetchGeneric (url, opts, auth = true) {
         }),
       Authorization: `Bearer ${accessToken}`,
       mode: 'no-cors',
-      ...((opts && opts.headers) || {}),
+      ...((opts && opts.headers) || {}),  
     },
   })
 }
 
 export async function fetchJSON (url, opts, auth = true) {
   const res = await fetchGeneric(url, opts, auth)
-
+  
   if (!res.ok) {
     const err = new Error(`network status error ${res.statusText}`)
     if (res.status === 401) {

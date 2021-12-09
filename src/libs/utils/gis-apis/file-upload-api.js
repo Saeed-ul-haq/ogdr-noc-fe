@@ -2,8 +2,28 @@ import tus from 'tus-js-client'
 import { getAccessToken, getUploadURL } from 'libs/utils/helpers'
 import { v4 as uuidv4 } from 'uuid'
 import axios from 'axios'
+import { fetchJSON } from 'libs/fetch'
 
-export default async ({
+
+const appendFileToForm = (form, file) => {
+  form.append('file', file)
+  return form
+}
+
+export default async files => {
+  const uploadURL = `https://api.dev.meeraspace.com/fm/upload?bucket=gisfe&share_with=sys:anonymous,sys:authenticated&meta={"fm":{"group":"target-qais-file-group","source":"energy"}}`
+  const opts = {
+    method: 'POST',
+    isFormData: true,
+    body: Array.isArray(files)
+      ? files.reduce(appendFileToForm, new FormData())
+      : appendFileToForm(new FormData(), files),
+  }
+
+  return fetchJSON(uploadURL, opts)
+}
+
+export const uploadTusClient = ({
   file,
   onSuccess,
   wsID,
