@@ -84,24 +84,31 @@ $md-primary-color: #1979ff;
   display: none;
 }
 
-::-webkit-scrollbar {
+.custom-scroll::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track {
   background: #f1f1f1;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
+  height: 80px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.custom-scroll::-webkit-scrollbar-thumb:hover {
   background: #555;
+  border-radius: 10px;
+
 }
 
 /* Generic classes related to display flex, will end with -g */

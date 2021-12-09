@@ -4,18 +4,21 @@
   display: flex;
   width: 100%;
   height: 100%;
-  max-height: calc(100% - 20px);
   flex-direction: column;
   position: relative;
 }
 
 .upload-progress-container {
-  position: absolute;
-  bottom: 10%;
-  right: 50px;
+  width: 50%;
+  height: calc(100vh - 136px);
+  float: right;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   ul {
-    width: 300px;
+    width: 100%;
     border-radius: 4px;
 
     .md-expansion-panel--expanded {

@@ -11,18 +11,23 @@ export default function NocHistory() {
     const ext = url.split('.').pop()
     return getFileIcon(ext)
   }
+  const getUser = () => {
+    return localStorage.getItem('sso-username')
+  }
 
   const columns = [
     {
       title: 'CreatedBy',
       dataIndex: 'createdBy',
       key: 'createdBy',
+      render: () => getUser(),
     },
 
     {
       title: 'Subject',
       dataIndex: 'subject',
       key: 'subject',
+      hidden: true,
     },
     {
       title: 'Organization',
@@ -53,8 +58,8 @@ export default function NocHistory() {
       title: 'File',
       dataIndex: 'url',
       key: 'url',
-      render: (url) => (
-        <div className='file-icon'> 
+      render: url => (
+        <div className="file-icon">
           <img width="47px" height="47px" src={getIcon(url)} />
           <a href={url}>
             <img src={download} />
@@ -67,7 +72,7 @@ export default function NocHistory() {
       dataIndex: 'assignedTo',
       key: 'assignedTo',
     },
-  ]
+  ].filter(col => !col.hidden)
 
   useEffect(async () => {
     const subject =
@@ -77,18 +82,20 @@ export default function NocHistory() {
   }, [])
 
   return (
-    <div className="noc-history-container" id="top">
-      <h3>History</h3>
-      <Table
-        className="noc-history-table"
-        columns={columns}
-        dataSource={listData}
-        pagination={{
-          defaultPageSize: 6,
-          showSizeChanger: true,
-          pageSizeOptions: ['6', '12', '18'],
-        }}
-      />
+    <div className='history'>
+      <h3 className='title'>History</h3>
+      <div className="noc-history-container custom-scroll">
+        <Table
+          className="noc-history-table"
+          columns={columns}
+          dataSource={listData}
+          pagination={{
+            defaultPageSize: 6,
+            showSizeChanger: true,
+            pageSizeOptions: ['6', '12', '18'],
+          }}
+        />
+      </div>
     </div>
   )
 }

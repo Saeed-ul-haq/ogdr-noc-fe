@@ -16,6 +16,9 @@ const Index = () => {
   const [uploadProgress, setuploadProgress] = useState(0)
   const [loaded, setloaded] = useState(0)
   const [total, settotal] = useState(0)
+  const [extension, setextension] = useState('')
+  const [fileName, setfileName] = useState('')
+  const [uploadStatus, setuploadStatus] = useState(null)
   const getOrganizationName = () => {
     return localStorage.getItem('organizationName')
   }
@@ -25,21 +28,17 @@ const Index = () => {
   const rightToolbar = <Button>Preview File</Button>
 
   const props = {
-    // showUploadList: {
-    //   showPreviewIcon: false,
-    //   showProgress: false,
-    //   showDownloadIcon: false,
-    //   showRemoveIcon: false,
-    // },
     onChange(info) {
-      setuploadProgress(info.file.percent)
-      if (info.file.status !== 'uploading') {
-        console.log(info.file, info.fileList)
-      }
-      if (info.file.status === 'done') {
-        message.success(`${info.file.name} file uploaded successfully`)
-      } else if (info.file.status === 'error') {
-        message.error(`${info.file.name} file upload failed.`)
+      switch (info.file.status) {
+        case 'uploading': {
+          setuploadStatus(info.file.status)
+        }
+        case 'done': {
+          setuploadStatus(info.file.status)
+        }
+        case 'error': {
+          setuploadStatus(info.file.status)
+        }
       }
     },
     progress: {
@@ -66,6 +65,7 @@ const Index = () => {
         await createNocRequest(body)
           .then(() => {
             message.success('File uploaded Successfully')
+            setuploadStatus('done')
           })
           .catch(err => {
             message.error({ content: `${err.message}`, key: 'upload' })
@@ -75,13 +75,16 @@ const Index = () => {
   }
 
   const onUploadFile = async ({ file }) => {
+    const fileExt = file.name.split('.')[1]
+    setfileName(file.name)
+    setextension(fileExt)
     setshowProgress(true)
     // message.loading({ content: 'Uploadeding File...', key: 'upload' })
     // setUploadedList(file)
     // try {
     //   const response = await uploadFile(file)
     //   const { files = [] } = response
-      // await storeFileUrl(files)
+    // await storeFileUrl(files)
     // } catch (err) {
     //   message.error({ content: `${err.message}`, key: 'upload' })
     // }
@@ -89,12 +92,12 @@ const Index = () => {
 
     const config = {
       onUploadProgress: function(progressEvent) {
-        settotal(progressEvent.total);
-        setloaded(progressEvent.loaded);
+        settotal(progressEvent.total)
+        setloaded(progressEvent.loaded)
         var percentCompleted = Math.round(
           (progressEvent.loaded * 100) / progressEvent.total,
         )
-        debugger;
+        debugger
         setuploadProgress(percentCompleted)
       },
     }
@@ -112,7 +115,7 @@ const Index = () => {
       },
       ...config,
     })
-      .then( async (res) => {
+      .then(async res => {
         console.log(res)
         await storeFileUrl(res.data.files)
       })
@@ -134,27 +137,20 @@ const Index = () => {
           '.gpx',
           '.dxf',
           '.pdf',
+          '.xsl',
         ]}
-        // defaultFileList={uploadedList}
+        defaultFileList={uploadedList}
         {...props}
         multiple={false}
         customRequest={onUploadFile}
         showUploadList={false}
-        // onChange={onUploadChange}
-        // showUploadList={{
-        //   showPreviewIcon: false,
-
-        //   showProgress: false,
-        //   showDownloadIcon: false,
-        //   showUploadList: false,
-        //   showRemoveIcon: false,
-        // }}
       >
         <p className="ant-upload-drag-icon">
           <UploadOutlined />
         </p>
         <p className="ant-upload-text">
-          Click or drag file to this area to upload
+          Drag and Drop file <br /> <br />
+          <Button type={`primary`}>Browse</Button>
         </p>
       </Dragger>
       {showProgress && (
@@ -164,6 +160,9 @@ const Index = () => {
           uploadedList={uploadedList}
           total={total}
           loaded={loaded}
+          status={uploadStatus}
+          fileName={fileName}
+          extension={extension}
         />
       )}
     </div>
