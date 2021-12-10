@@ -3,7 +3,10 @@ import { Table, Button } from 'antd'
 import { getFileIcon } from 'libs/utils'
 import './styles.scss'
 import getNocLists from 'libs/utils/noc-apis/noc-list'
-import download from 'images/svg/download.svg'
+import Download from '@mui/icons-material/Download';
+import { formatDateTime } from 'libs/utils/helpers'
+
+
 export default function NocHistory() {
   const [listData, setlistData] = useState([])
   const [scroll, setScroll] = useState(false)
@@ -48,6 +51,7 @@ export default function NocHistory() {
       title: 'createdAt',
       dataIndex: 'createdAt',
       key: 'createdAt',
+      render: (date) => formatDateTime(date)
     },
     {
       title: 'Status',
@@ -61,8 +65,8 @@ export default function NocHistory() {
       render: url => (
         <div className="file-icon">
           <img width="47px" height="47px" src={getIcon(url)} />
-          <a href={url}>
-            <img src={download} />
+          <a href={url} title='download' >
+           <Download   />
           </a>
         </div>
       ),

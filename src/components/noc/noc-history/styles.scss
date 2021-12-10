@@ -23,6 +23,10 @@
       position: relative;
       padding: 2px 5px;
       overflow-wrap: break-word;
+
+      &:first-child {
+        padding-left: 10px;
+      }
     }
   }
   .file-icon {
@@ -33,9 +37,15 @@
     a {
       display: none;
       text-align: center;
+      color: #747474;
       position: absolute;
       bottom: 0px;
-      right: 8px;
+      right: 45px;
+
+      svg {
+        height: 15px;
+        width: 15px;
+      }
     }
 
     &:hover a {

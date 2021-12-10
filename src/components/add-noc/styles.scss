@@ -8,5 +8,10 @@
     float: left;
     width: 50%;
     height: 100%;
+
+    button.browse-btn {
+      cursor: pointer;
+      z-index: 10000;
+    }
   }
 }

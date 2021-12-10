@@ -1,19 +1,30 @@
-import React from 'react'
-import { ExpansionList, ExpansionPanel, SVGIcon, FontIcon } from 'react-md'
+import CheckCircleOutlineRoundedIcon from '@mui/icons-material/CheckCircleOutlineRounded'
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
 import { getFileSize } from 'libs/utils/helpers'
 import PropTypes from 'prop-types'
-import DoneIcon from '@mui/icons-material/Done'
+import React, { useState } from 'react'
+import { ExpansionList, ExpansionPanel, FontIcon } from 'react-md'
 import './styles.scss'
-import { Progress } from 'antd'
 
 const UploadProgressDialog = props => {
-  const { percent = 0, closeUploadDialog, loaded, total,fileName,extension,status } = props
+  const {
+    closeUploadDialog,
+    loaded,
+    total,
+    fileName,
+    extension,
+    status,
+  } = props
 
+  const [expanded, setexpanded] = useState(true)
+
+  const onExpandToggle = () => setexpanded(false)
   return (
     <div className="upload-progress-container">
       <ExpansionList>
         <ExpansionPanel
-          expanded={true}
+          expanded={expanded}
+          onExpandToggle={() => setexpanded(!expanded) }
           label={
             <div
               style={{
@@ -46,7 +57,11 @@ const UploadProgressDialog = props => {
               </p>
             </div>
             <div className="progress-icon">
-              <DoneIcon />
+              {status !== 'completed' ? (
+                <CloseRoundedIcon />
+              ) : (
+                <CheckCircleOutlineRoundedIcon color="primary" />
+              )}
             </div>
           </div>
         </ExpansionPanel>

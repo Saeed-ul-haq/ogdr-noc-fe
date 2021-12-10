@@ -3,6 +3,7 @@ import { get, groupBy } from 'lodash'
 
 import { getCookie } from 'tiny-cookie'
 import { Meerafs } from '@target-energysolutions/generated-meerafs'
+import moment from 'moment'
 
 export function extractUniqValue(data, name) {
   return data && data.length ? uniq(data.map(i => i[name])) : []
@@ -50,6 +51,10 @@ export const formatDate = date => {
       convertedDate[1] + ' ' + convertedDate[2] + ',' + convertedDate[3]
     return uploadedDate
   }
+}
+
+export const formatDateTime = dateTime => {
+  return moment(dateTime).format('MM-DD-YYYY hh:mm:ss A');
 }
 
 export const getNamespace = wsId => {

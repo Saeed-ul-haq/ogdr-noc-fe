@@ -1,17 +1,13 @@
+import AddNoc from 'components/add-noc'
 import Spinner from 'components/ui-kit/loader'
 import PropTypes from 'prop-types'
-import React, { Suspense, lazy } from 'react'
-import AddNoc from 'components/add-noc'
-import Topbar from './topbar'
-import { Route, Switch, useHistory } from 'react-router-dom'
+import React, { lazy, Suspense } from 'react'
+import { Route, Switch } from 'react-router-dom'
 import './styles.scss'
+import Topbar from './topbar'
 
 const NOC = lazy(() => import('components/noc'))
-
 const OgdrNocHome = () => {
-  const history = useHistory()
-  const { location } = history
-  const { pathname } = location
   return (
     <div className="main-container">
       <Topbar />
@@ -19,7 +15,6 @@ const OgdrNocHome = () => {
         <Route>
           <Switch>
             <Route path="/add-noc" exact component={AddNoc} />
-
             <Route path={'/'} exact component={NOC} />
           </Switch>
         </Route>

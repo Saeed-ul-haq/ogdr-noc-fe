@@ -1,68 +1,44 @@
-import React, { useState } from 'react'
-import Toolbar from 'components/toolbar'
-import './styles.scss'
-import { Upload, message, Button } from 'antd'
 import { UploadOutlined } from '@ant-design/icons'
-import uploadFile from 'libs/utils/gis-apis/file-upload-api'
-import { createNocRequest } from 'libs/utils/noc-apis/noc-list'
-import { map } from 'lodash'
+import { Button, message, Upload } from 'antd'
+import Toolbar from 'components/toolbar'
 import UploadProgressDialog from 'components/ui-kit/upload-dialog'
-import axios from 'axios'
-import { getAccessToken } from 'libs/utils/helpers'
+import {
+  getOrganizations,
+  getUserSubject,
+} from 'libs/utils/gis-apis/get-workspaces-api'
+import { fileUpload, storeUrl } from 'libs/utils/noc-apis/noc-list'
+import { map } from 'lodash'
+import React, { useState } from 'react'
+import './styles.scss'
 
 const Index = () => {
   const [uploadedList, setUploadedList] = useState([])
   const [showProgress, setshowProgress] = useState(false)
-  const [uploadProgress, setuploadProgress] = useState(0)
   const [loaded, setloaded] = useState(0)
   const [total, settotal] = useState(0)
   const [extension, setextension] = useState('')
   const [fileName, setfileName] = useState('')
   const [uploadStatus, setuploadStatus] = useState(null)
-  const getOrganizationName = () => {
-    return localStorage.getItem('organizationName')
+  const getOrganizationName = async () => {
+    const { data } = await getOrganizations()
+    return data.meOrganizations[0].Name
   }
   const { Dragger } = Upload
 
   const leftToolbar = <h3>Upload File</h3>
   const rightToolbar = <Button>Preview File</Button>
 
-  const props = {
-    onChange(info) {
-      switch (info.file.status) {
-        case 'uploading': {
-          setuploadStatus(info.file.status)
-        }
-        case 'done': {
-          setuploadStatus(info.file.status)
-        }
-        case 'error': {
-          setuploadStatus(info.file.status)
-        }
-      }
-    },
-    progress: {
-      strokeColor: {
-        '0%': '#108ee9',
-        '100%': '#87d068',
-      },
-      strokeWidth: 3,
-      format: percent => `${parseFloat(percent.toFixed(2))}%`,
-    },
-  }
-
   const storeFileUrl = async files => {
     await Promise.all(
       map(files, async ({ id }) => {
         const body = {
-          createdBy:
-            'CiQ2ZDFmNmZkZS03OTY1LTQ0NWUtYmJmNy1iNThiZTBkOTk1NWUSBWxvY2Fs',
-          subject: 'Building Permit',
-          organization: getOrganizationName(),
+          createdBy: localStorage.getItem('sso-username'),
+          subject: await getUserSubject(),
+          organization: await getOrganizationName(),
           description: 'Housing Permiting',
           url: `https://api.dev.meeraspace.com/fm/download/${id}`,
         }
-        await createNocRequest(body)
+        await storeUrl(body)
           .then(() => {
             message.success('File uploaded Successfully')
             setuploadStatus('done')
@@ -74,55 +50,28 @@ const Index = () => {
     )
   }
 
+  const config = {
+    onUploadProgress: function(progressEvent) {
+      settotal(progressEvent.total)
+      setloaded(progressEvent.loaded)
+      var percentCompleted = Math.round(
+        (progressEvent.loaded * 100) / progressEvent.total,
+      )
+      setuploadStatus(
+        percentCompleted === 100 ? 'completed' : progressEvent.type,
+      )
+    },
+  }
   const onUploadFile = async ({ file }) => {
-    const fileExt = file.name.split('.')[1]
+    const fileExt = file.name.split('.').pop()
     setfileName(file.name)
     setextension(fileExt)
     setshowProgress(true)
-    // message.loading({ content: 'Uploadeding File...', key: 'upload' })
-    // setUploadedList(file)
-    // try {
-    //   const response = await uploadFile(file)
-    //   const { files = [] } = response
-    // await storeFileUrl(files)
-    // } catch (err) {
-    //   message.error({ content: `${err.message}`, key: 'upload' })
-    // }
-    const accessToken = getAccessToken()
 
-    const config = {
-      onUploadProgress: function(progressEvent) {
-        settotal(progressEvent.total)
-        setloaded(progressEvent.loaded)
-        var percentCompleted = Math.round(
-          (progressEvent.loaded * 100) / progressEvent.total,
-        )
-        debugger
-        setuploadProgress(percentCompleted)
-      },
-    }
-    const uploadURL = `https://api.dev.meeraspace.com/fm/upload?bucket=gisfe&share_with=sys:anonymous,sys:authenticated&meta={"fm":{"group":"target-qais-file-group","source":"energy"}}`
-    const form = new FormData()
-    form.append('file', file)
-    axios({
-      method: 'POST',
-      url: uploadURL,
-      data: form,
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        mode: 'no-cors',
-        'Content-Type': 'multipart/form-data',
-      },
-      ...config,
-    })
-      .then(async res => {
-        console.log(res)
-        await storeFileUrl(res.data.files)
-      })
-      .catch(err => {
-        debugger
-      })
+    const res = await fileUpload(file, config)
+    await storeFileUrl(res.data.files)
   }
+
   return (
     <div className="add-noc-container">
       <Toolbar leftToolbar={leftToolbar} rightToolbar={rightToolbar} />
@@ -137,10 +86,11 @@ const Index = () => {
           '.gpx',
           '.dxf',
           '.pdf',
-          '.xsl',
+          '.xlsx',
+          '.json',
+          '.dwg',
         ]}
         defaultFileList={uploadedList}
-        {...props}
         multiple={false}
         customRequest={onUploadFile}
         showUploadList={false}
@@ -150,12 +100,13 @@ const Index = () => {
         </p>
         <p className="ant-upload-text">
           Drag and Drop file <br /> <br />
-          <Button type={`primary`}>Browse</Button>
+          <Button className="browse-btn" type={`primary`}>
+            Browse
+          </Button>
         </p>
       </Dragger>
       {showProgress && (
         <UploadProgressDialog
-          percent={uploadProgress}
           closeUploadDialog={() => setshowProgress(false)}
           uploadedList={uploadedList}
           total={total}

@@ -12,8 +12,8 @@ export const getUploadURL = wsSubject => {
   let metaInfo = JSON.stringify({
     fm: {
       group: `target-subscription-store:${orgId}:Member`,
-      source: `edge`
-    }
+      source: `edge`,
+    },
   })
   let uploadUrl = ''
   uploadUrl = `${PRODUCT_APP_URL_FILEMANAGER}/upload?meta=${metaInfo}`
@@ -72,8 +72,14 @@ export const getFileIcon = (type = '') => {
       return require('images/file_sgy.svg')
     case 'p190':
       return require('images/file_p190.svg')
-      case 'csv':
-        return require('images/file_csv.svg')
+    case 'csv':
+      return require('images/file_csv.svg')
+    case 'dxf':
+      return require('images/file_dxf.svg')
+    case 'dwg':
+      return require('images/file_dwg.svg')
+    case 'json':
+      return require('images/file_json.svg')
     case 'directory':
       return require('images/folder.svg')
     case 'file':
@@ -109,7 +115,7 @@ export function fileToObject(file) {
     uid: file.uid,
     percent: 0,
     webkitRelativePath: file.webkitRelativePath,
-    originFileObj: file
+    originFileObj: file,
   }
 }
 export function getAppMode() {

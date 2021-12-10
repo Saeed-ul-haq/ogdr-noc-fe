@@ -66,3 +66,8 @@ export async function currentLoggedInUser() {
     true
   )
 }
+
+export const getUserSubject = async () => {
+  const {data} = await currentLoggedInUser()
+    return data && data.me.userProfile.subject;
+}
